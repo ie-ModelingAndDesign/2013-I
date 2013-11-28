@@ -125,10 +125,7 @@
 				67CC360E1842CDCA004BCF27 /* Main.storyboard */,
 				67CC36111842CDCA004BCF27 /* ViewController.h */,
 				67CC36121842CDCA004BCF27 /* ViewController.m */,
-				67CC36311842CF1F004BCF27 /* sweet1.jpg */,
-				67CC36321842CF1F004BCF27 /* sweet2.jpg */,
-				67CC36331842CF1F004BCF27 /* sweet3.jpg */,
-				67CC36341842CF1F004BCF27 /* sweet4.jpeg */,
+				68146B3B1846DD26001ACE1B /* Images */,
 				67CC36141842CDCA004BCF27 /* Images.xcassets */,
 				67CC36031842CDCA004BCF27 /* Supporting Files */,
 			);
@@ -162,6 +159,17 @@
 				67CC36241842CDCB004BCF27 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68146B3B1846DD26001ACE1B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				67CC36311842CF1F004BCF27 /* sweet1.jpg */,
+				67CC36321842CF1F004BCF27 /* sweet2.jpg */,
+				67CC36331842CF1F004BCF27 /* sweet3.jpg */,
+				67CC36341842CF1F004BCF27 /* sweet4.jpeg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

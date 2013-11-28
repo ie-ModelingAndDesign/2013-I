@@ -12,7 +12,8 @@
     int i;
     int m;
     __weak IBOutlet UILabel *counter;
-    UIButton *btn;
+    
+    
 }
 
 - (void)viewChange:(int)i;
