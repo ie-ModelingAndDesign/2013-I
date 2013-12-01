@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController {
     int i;
     int m;
     __weak IBOutlet UILabel *counter;
+@public AVAudioPlayer *audio; //音のメンバ変数
     
     
 }

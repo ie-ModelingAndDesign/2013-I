@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654CF815184AF0AD004923EF /* おなら.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 654CF814184AF0AD004923EF /* おなら.mp3 */; };
+		654CF817184AF0CC004923EF /* 炭酸飲料缶.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 654CF816184AF0CC004923EF /* 炭酸飲料缶.mp3 */; };
+		654CF819184AF0DB004923EF /* 残念.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 654CF818184AF0DB004923EF /* 残念.mp3 */; };
+		654CF81B184AF168004923EF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CF81A184AF168004923EF /* AVFoundation.framework */; };
 		67CC35FD1842CDCA004BCF27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CC35FC1842CDCA004BCF27 /* Foundation.framework */; };
 		67CC35FF1842CDCA004BCF27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CC35FE1842CDCA004BCF27 /* CoreGraphics.framework */; };
 		67CC36011842CDCA004BCF27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CC36001842CDCA004BCF27 /* UIKit.framework */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		654CF814184AF0AD004923EF /* おなら.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "おなら.mp3"; sourceTree = "<group>"; };
+		654CF816184AF0CC004923EF /* 炭酸飲料缶.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "炭酸飲料缶.mp3"; sourceTree = "<group>"; };
+		654CF818184AF0DB004923EF /* 残念.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "残念.mp3"; sourceTree = "<group>"; };
+		654CF81A184AF168004923EF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		67CC35F91842CDCA004BCF27 /* model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = model.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CC35FC1842CDCA004BCF27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		67CC35FE1842CDCA004BCF27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654CF81B184AF168004923EF /* AVFoundation.framework in Frameworks */,
 				67CC35FF1842CDCA004BCF27 /* CoreGraphics.framework in Frameworks */,
 				67CC36011842CDCA004BCF27 /* UIKit.framework in Frameworks */,
 				67CC35FD1842CDCA004BCF27 /* Foundation.framework in Frameworks */,
@@ -109,6 +118,7 @@
 		67CC35FB1842CDCA004BCF27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				654CF81A184AF168004923EF /* AVFoundation.framework */,
 				67CC35FC1842CDCA004BCF27 /* Foundation.framework */,
 				67CC35FE1842CDCA004BCF27 /* CoreGraphics.framework */,
 				67CC36001842CDCA004BCF27 /* UIKit.framework */,
@@ -135,6 +145,9 @@
 		67CC36031842CDCA004BCF27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				654CF814184AF0AD004923EF /* おなら.mp3 */,
+				654CF816184AF0CC004923EF /* 炭酸飲料缶.mp3 */,
+				654CF818184AF0DB004923EF /* 残念.mp3 */,
 				67CC36041842CDCA004BCF27 /* model-Info.plist */,
 				67CC36051842CDCA004BCF27 /* InfoPlist.strings */,
 				67CC36081842CDCA004BCF27 /* main.m */,
@@ -248,9 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654CF819184AF0DB004923EF /* 残念.mp3 in Resources */,
 				67CC36371842CF1F004BCF27 /* sweet3.jpg in Resources */,
 				67CC36361842CF1F004BCF27 /* sweet2.jpg in Resources */,
+				654CF815184AF0AD004923EF /* おなら.mp3 in Resources */,
 				67CC36381842CF1F004BCF27 /* sweet4.jpeg in Resources */,
+				654CF817184AF0CC004923EF /* 炭酸飲料缶.mp3 in Resources */,
 				67CC36151842CDCA004BCF27 /* Images.xcassets in Resources */,
 				67CC36071842CDCA004BCF27 /* InfoPlist.strings in Resources */,
 				67CC36351842CF1F004BCF27 /* sweet1.jpg in Resources */,
