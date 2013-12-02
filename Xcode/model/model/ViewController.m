@@ -38,17 +38,16 @@ UIButton *OPbtn3;
     [UIButton buttonWithType:UIButtonTypeRoundedRect];
 
     
-    // ボタンの位置を設定
-    button.center = CGPointMake(120, 400);
+    //ボタンのサイズを画像と一緒にする
+    button.frame = CGRectMake(40,100,250,250);
     
+    // ボタンの位置を設定
     OPbtn1.center = CGPointMake(50, 75);
     OPbtn2.center = CGPointMake(150, 75);
     OPbtn3.center = CGPointMake(250, 75);
     
     
     // キャプションを設定
-    [button setTitle:@"ボタンサンプル"
-            forState:UIControlStateNormal];
     
     [OPbtn1 setTitle:@"push"
             forState:UIControlStateNormal];
@@ -59,7 +58,6 @@ UIButton *OPbtn3;
     
     
     // キャプションに合わせてサイズを設定
-    [button sizeToFit];
     [OPbtn1 sizeToFit];
     [OPbtn2 sizeToFit];
     [OPbtn3 sizeToFit];
