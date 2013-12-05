@@ -36,6 +36,9 @@ UIButton *OPbtn3;
     [UIButton buttonWithType:UIButtonTypeRoundedRect];
     OPbtn3 =
     [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    
+    
+    
 
     
     //ボタンのサイズを画像と一緒にする
@@ -138,9 +141,20 @@ UIButton *OPbtn3;
     }
     
 
+    // アラート
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"ED"
+                          message:@"お疲れ様でしたーーー！！！"
+                          delegate:self
+                          cancelButtonTitle:@"キャンセル"
+                          otherButtonTitles:@"戻る", nil];
+    
+    
+    if (i==1000000){
+        [alert show];
+    }
     
 }
-
 
 
 /**
@@ -257,6 +271,29 @@ UIButton *OPbtn3;
     // UIImageViewのインスタンスをビューに追加
     [self.view addSubview:imageView];
     
+}
+
+/**
+ * カウントが0になったときのアラートの動作
+ */
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 1: // 戻るが押されたとき
+            NSLog(@"戻る");
+            i = 0;
+            counter.text = @"1000000";
+            break;
+            
+        default: // キャンセルが押されたとき
+            NSLog(@"キャンセル");
+            i = 0;
+            counter.text = @"1000000";
+            break;
+
+    }
+    
+
 }
 
 @end
