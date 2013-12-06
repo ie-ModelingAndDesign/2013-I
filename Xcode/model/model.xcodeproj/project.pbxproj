@@ -29,6 +29,26 @@
 		67CC36361842CF1F004BCF27 /* sweet2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36321842CF1F004BCF27 /* sweet2.jpg */; };
 		67CC36371842CF1F004BCF27 /* sweet3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36331842CF1F004BCF27 /* sweet3.jpg */; };
 		67CC36381842CF1F004BCF27 /* sweet4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36341842CF1F004BCF27 /* sweet4.jpeg */; };
+		A6152DF21851AD2900A82305 /* chainsaw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDE1851AD2900A82305 /* chainsaw.mp3 */; };
+		A6152DF31851AD2900A82305 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDF1851AD2900A82305 /* dog.mp3 */; };
+		A6152DF41851AD2900A82305 /* drill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE01851AD2900A82305 /* drill.mp3 */; };
+		A6152DF51851AD2900A82305 /* fafafa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE11851AD2900A82305 /* fafafa.mp3 */; };
+		A6152DF61851AD2900A82305 /* ghost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE21851AD2900A82305 /* ghost.mp3 */; };
+		A6152DF71851AD2900A82305 /* glass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE31851AD2900A82305 /* glass.mp3 */; };
+		A6152DF81851AD2900A82305 /* goki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE41851AD2900A82305 /* goki.mp3 */; };
+		A6152DF91851AD2900A82305 /* howa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE51851AD2900A82305 /* howa.mp3 */; };
+		A6152DFA1851AD2900A82305 /* ka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE61851AD2900A82305 /* ka.mp3 */; };
+		A6152DFB1851AD2900A82305 /* meka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE71851AD2900A82305 /* meka.mp3 */; };
+		A6152DFC1851AD2900A82305 /* metal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE81851AD2900A82305 /* metal.mp3 */; };
+		A6152DFD1851AD2900A82305 /* mistake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE91851AD2900A82305 /* mistake.mp3 */; };
+		A6152DFE1851AD2900A82305 /* onara.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEA1851AD2900A82305 /* onara.mp3 */; };
+		A6152DFF1851AD2900A82305 /* pen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEB1851AD2900A82305 /* pen.mp3 */; };
+		A6152E001851AD2900A82305 /* saw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEC1851AD2900A82305 /* saw.mp3 */; };
+		A6152E011851AD2900A82305 /* suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DED1851AD2900A82305 /* suspense.mp3 */; };
+		A6152E021851AD2900A82305 /* tansan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEE1851AD2900A82305 /* tansan.mp3 */; };
+		A6152E031851AD2900A82305 /* thinking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEF1851AD2900A82305 /* thinking.mp3 */; };
+		A6152E041851AD2900A82305 /* xmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF01851AD2900A82305 /* xmas.mp3 */; };
+		A6152E051851AD2900A82305 /* zannen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF11851AD2900A82305 /* zannen.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,29 +66,49 @@
 		654CF816184AF0CC004923EF /* 炭酸飲料缶.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "炭酸飲料缶.mp3"; sourceTree = "<group>"; };
 		654CF818184AF0DB004923EF /* 残念.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "残念.mp3"; sourceTree = "<group>"; };
 		654CF81A184AF168004923EF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		67CC35F91842CDCA004BCF27 /* model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = model.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CC35F91842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = model.temp_caseinsensitive_rename_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CC35FC1842CDCA004BCF27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		67CC35FE1842CDCA004BCF27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		67CC36001842CDCA004BCF27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		67CC36041842CDCA004BCF27 /* model-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "model-Info.plist"; sourceTree = "<group>"; };
+		67CC36041842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "model.temp_caseinsensitive_rename_2-Info.plist"; sourceTree = "<group>"; };
 		67CC36061842CDCA004BCF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67CC36081842CDCA004BCF27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		67CC360A1842CDCA004BCF27 /* model-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "model-Prefix.pch"; sourceTree = "<group>"; };
+		67CC360A1842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "model.temp_caseinsensitive_rename_2-Prefix.pch"; sourceTree = "<group>"; };
 		67CC360B1842CDCA004BCF27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67CC360C1842CDCA004BCF27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67CC360F1842CDCA004BCF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67CC36111842CDCA004BCF27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67CC36121842CDCA004BCF27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		67CC36141842CDCA004BCF27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		67CC361A1842CDCB004BCF27 /* modelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CC361A1842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = model.temp_caseinsensitive_rename_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CC361B1842CDCB004BCF27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		67CC36231842CDCB004BCF27 /* modelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "modelTests-Info.plist"; sourceTree = "<group>"; };
+		67CC36231842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "model.temp_caseinsensitive_rename_2Tests-Info.plist"; sourceTree = "<group>"; };
 		67CC36251842CDCB004BCF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67CC36271842CDCB004BCF27 /* modelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modelTests.m; sourceTree = "<group>"; };
 		67CC36311842CF1F004BCF27 /* sweet1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet1.jpg; sourceTree = "<group>"; };
 		67CC36321842CF1F004BCF27 /* sweet2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet2.jpg; sourceTree = "<group>"; };
 		67CC36331842CF1F004BCF27 /* sweet3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet3.jpg; sourceTree = "<group>"; };
 		67CC36341842CF1F004BCF27 /* sweet4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet4.jpeg; sourceTree = "<group>"; };
+		A6152DDE1851AD2900A82305 /* chainsaw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chainsaw.mp3; sourceTree = "<group>"; };
+		A6152DDF1851AD2900A82305 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
+		A6152DE01851AD2900A82305 /* drill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drill.mp3; sourceTree = "<group>"; };
+		A6152DE11851AD2900A82305 /* fafafa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fafafa.mp3; sourceTree = "<group>"; };
+		A6152DE21851AD2900A82305 /* ghost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ghost.mp3; sourceTree = "<group>"; };
+		A6152DE31851AD2900A82305 /* glass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = glass.mp3; sourceTree = "<group>"; };
+		A6152DE41851AD2900A82305 /* goki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = goki.mp3; sourceTree = "<group>"; };
+		A6152DE51851AD2900A82305 /* howa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = howa.mp3; sourceTree = "<group>"; };
+		A6152DE61851AD2900A82305 /* ka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ka.mp3; sourceTree = "<group>"; };
+		A6152DE71851AD2900A82305 /* meka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meka.mp3; sourceTree = "<group>"; };
+		A6152DE81851AD2900A82305 /* metal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = metal.mp3; sourceTree = "<group>"; };
+		A6152DE91851AD2900A82305 /* mistake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mistake.mp3; sourceTree = "<group>"; };
+		A6152DEA1851AD2900A82305 /* onara.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onara.mp3; sourceTree = "<group>"; };
+		A6152DEB1851AD2900A82305 /* pen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pen.mp3; sourceTree = "<group>"; };
+		A6152DEC1851AD2900A82305 /* saw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = saw.mp3; sourceTree = "<group>"; };
+		A6152DED1851AD2900A82305 /* suspense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suspense.mp3; sourceTree = "<group>"; };
+		A6152DEE1851AD2900A82305 /* tansan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tansan.mp3; sourceTree = "<group>"; };
+		A6152DEF1851AD2900A82305 /* thinking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thinking.mp3; sourceTree = "<group>"; };
+		A6152DF01851AD2900A82305 /* xmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmas.mp3; sourceTree = "<group>"; };
+		A6152DF11851AD2900A82305 /* zannen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zannen.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +149,8 @@
 		67CC35FA1842CDCA004BCF27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67CC35F91842CDCA004BCF27 /* model.app */,
-				67CC361A1842CDCB004BCF27 /* modelTests.xctest */,
+				67CC35F91842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2.app */,
+				67CC361A1842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +175,7 @@
 				67CC360E1842CDCA004BCF27 /* Main.storyboard */,
 				67CC36111842CDCA004BCF27 /* ViewController.h */,
 				67CC36121842CDCA004BCF27 /* ViewController.m */,
+				A6152DDD1851AD2900A82305 /* Sounds */,
 				68146B3B1846DD26001ACE1B /* Images */,
 				67CC36141842CDCA004BCF27 /* Images.xcassets */,
 				67CC36031842CDCA004BCF27 /* Supporting Files */,
@@ -148,10 +189,10 @@
 				654CF814184AF0AD004923EF /* おなら.mp3 */,
 				654CF816184AF0CC004923EF /* 炭酸飲料缶.mp3 */,
 				654CF818184AF0DB004923EF /* 残念.mp3 */,
-				67CC36041842CDCA004BCF27 /* model-Info.plist */,
+				67CC36041842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2-Info.plist */,
 				67CC36051842CDCA004BCF27 /* InfoPlist.strings */,
 				67CC36081842CDCA004BCF27 /* main.m */,
-				67CC360A1842CDCA004BCF27 /* model-Prefix.pch */,
+				67CC360A1842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,7 +209,7 @@
 		67CC36221842CDCB004BCF27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				67CC36231842CDCB004BCF27 /* modelTests-Info.plist */,
+				67CC36231842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests-Info.plist */,
 				67CC36241842CDCB004BCF27 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -185,12 +226,39 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		A6152DDD1851AD2900A82305 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A6152DDE1851AD2900A82305 /* chainsaw.mp3 */,
+				A6152DDF1851AD2900A82305 /* dog.mp3 */,
+				A6152DE01851AD2900A82305 /* drill.mp3 */,
+				A6152DE11851AD2900A82305 /* fafafa.mp3 */,
+				A6152DE21851AD2900A82305 /* ghost.mp3 */,
+				A6152DE31851AD2900A82305 /* glass.mp3 */,
+				A6152DE41851AD2900A82305 /* goki.mp3 */,
+				A6152DE51851AD2900A82305 /* howa.mp3 */,
+				A6152DE61851AD2900A82305 /* ka.mp3 */,
+				A6152DE71851AD2900A82305 /* meka.mp3 */,
+				A6152DE81851AD2900A82305 /* metal.mp3 */,
+				A6152DE91851AD2900A82305 /* mistake.mp3 */,
+				A6152DEA1851AD2900A82305 /* onara.mp3 */,
+				A6152DEB1851AD2900A82305 /* pen.mp3 */,
+				A6152DEC1851AD2900A82305 /* saw.mp3 */,
+				A6152DED1851AD2900A82305 /* suspense.mp3 */,
+				A6152DEE1851AD2900A82305 /* tansan.mp3 */,
+				A6152DEF1851AD2900A82305 /* thinking.mp3 */,
+				A6152DF01851AD2900A82305 /* xmas.mp3 */,
+				A6152DF11851AD2900A82305 /* zannen.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		67CC35F81842CDCA004BCF27 /* model */ = {
+		67CC35F81842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67CC362B1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "model" */;
+			buildConfigurationList = 67CC362B1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "model.temp_caseinsensitive_rename_2" */;
 			buildPhases = (
 				67CC35F51842CDCA004BCF27 /* Sources */,
 				67CC35F61842CDCA004BCF27 /* Frameworks */,
@@ -200,14 +268,14 @@
 			);
 			dependencies = (
 			);
-			name = model;
+			name = model.temp_caseinsensitive_rename_2;
 			productName = model;
-			productReference = 67CC35F91842CDCA004BCF27 /* model.app */;
+			productReference = 67CC35F91842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		67CC36191842CDCB004BCF27 /* modelTests */ = {
+		67CC36191842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67CC362E1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "modelTests" */;
+			buildConfigurationList = 67CC362E1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "model.temp_caseinsensitive_rename_2Tests" */;
 			buildPhases = (
 				67CC36161842CDCB004BCF27 /* Sources */,
 				67CC36171842CDCB004BCF27 /* Frameworks */,
@@ -218,9 +286,9 @@
 			dependencies = (
 				67CC36201842CDCB004BCF27 /* PBXTargetDependency */,
 			);
-			name = modelTests;
+			name = model.temp_caseinsensitive_rename_2Tests;
 			productName = modelTests;
-			productReference = 67CC361A1842CDCB004BCF27 /* modelTests.xctest */;
+			productReference = 67CC361A1842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -250,8 +318,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67CC35F81842CDCA004BCF27 /* model */,
-				67CC36191842CDCB004BCF27 /* modelTests */,
+				67CC35F81842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2 */,
+				67CC36191842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,15 +329,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6152DFF1851AD2900A82305 /* pen.mp3 in Resources */,
+				A6152DF21851AD2900A82305 /* chainsaw.mp3 in Resources */,
+				A6152DFD1851AD2900A82305 /* mistake.mp3 in Resources */,
+				A6152DF71851AD2900A82305 /* glass.mp3 in Resources */,
+				A6152DF61851AD2900A82305 /* ghost.mp3 in Resources */,
+				A6152DFA1851AD2900A82305 /* ka.mp3 in Resources */,
+				A6152DF81851AD2900A82305 /* goki.mp3 in Resources */,
 				654CF819184AF0DB004923EF /* 残念.mp3 in Resources */,
 				67CC36371842CF1F004BCF27 /* sweet3.jpg in Resources */,
+				A6152E041851AD2900A82305 /* xmas.mp3 in Resources */,
+				A6152DF31851AD2900A82305 /* dog.mp3 in Resources */,
+				A6152E021851AD2900A82305 /* tansan.mp3 in Resources */,
+				A6152E051851AD2900A82305 /* zannen.mp3 in Resources */,
 				67CC36361842CF1F004BCF27 /* sweet2.jpg in Resources */,
 				654CF815184AF0AD004923EF /* おなら.mp3 in Resources */,
 				67CC36381842CF1F004BCF27 /* sweet4.jpeg in Resources */,
+				A6152DF51851AD2900A82305 /* fafafa.mp3 in Resources */,
+				A6152E011851AD2900A82305 /* suspense.mp3 in Resources */,
+				A6152DFE1851AD2900A82305 /* onara.mp3 in Resources */,
+				A6152DF91851AD2900A82305 /* howa.mp3 in Resources */,
+				A6152E031851AD2900A82305 /* thinking.mp3 in Resources */,
 				654CF817184AF0CC004923EF /* 炭酸飲料缶.mp3 in Resources */,
 				67CC36151842CDCA004BCF27 /* Images.xcassets in Resources */,
+				A6152E001851AD2900A82305 /* saw.mp3 in Resources */,
 				67CC36071842CDCA004BCF27 /* InfoPlist.strings in Resources */,
+				A6152DFB1851AD2900A82305 /* meka.mp3 in Resources */,
 				67CC36351842CF1F004BCF27 /* sweet1.jpg in Resources */,
+				A6152DFC1851AD2900A82305 /* metal.mp3 in Resources */,
+				A6152DF41851AD2900A82305 /* drill.mp3 in Resources */,
 				67CC36101842CDCA004BCF27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +396,7 @@
 /* Begin PBXTargetDependency section */
 		67CC36201842CDCB004BCF27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 67CC35F81842CDCA004BCF27 /* model */;
+			target = 67CC35F81842CDCA004BCF27 /* model.temp_caseinsensitive_rename_2 */;
 			targetProxy = 67CC361F1842CDCB004BCF27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,9 +507,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "model/model-Prefix.pch";
-				INFOPLIST_FILE = "model/model-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "model/model.temp_caseinsensitive_rename_2-Prefix.pch";
+				INFOPLIST_FILE = "model/model.temp_caseinsensitive_rename_2-Info.plist";
+				PRODUCT_NAME = model.temp_caseinsensitive_rename_2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -432,9 +520,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "model/model-Prefix.pch";
-				INFOPLIST_FILE = "model/model-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "model/model.temp_caseinsensitive_rename_2-Prefix.pch";
+				INFOPLIST_FILE = "model/model.temp_caseinsensitive_rename_2-Info.plist";
+				PRODUCT_NAME = model.temp_caseinsensitive_rename_2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -455,8 +543,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "modelTests/modelTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "modelTests/model.temp_caseinsensitive_rename_2Tests-Info.plist";
+				PRODUCT_NAME = model.temp_caseinsensitive_rename_2Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -474,8 +562,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "model/model-Prefix.pch";
-				INFOPLIST_FILE = "modelTests/modelTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "modelTests/model.temp_caseinsensitive_rename_2Tests-Info.plist";
+				PRODUCT_NAME = model.temp_caseinsensitive_rename_2Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -493,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67CC362B1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "model" */ = {
+		67CC362B1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "model.temp_caseinsensitive_rename_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67CC362C1842CDCB004BCF27 /* Debug */,
@@ -502,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67CC362E1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "modelTests" */ = {
+		67CC362E1842CDCB004BCF27 /* Build configuration list for PBXNativeTarget "model.temp_caseinsensitive_rename_2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67CC362F1842CDCB004BCF27 /* Debug */,

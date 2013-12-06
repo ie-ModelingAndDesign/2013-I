@@ -164,12 +164,14 @@ UIButton *OPbtn3;
  */
 
 - (IBAction)OptionBtn_Tapped:(id)sender {
- 
-    [self OptionCounter:0];
+
     
-    //OPbtn1.hidden = YES;
-    //OPbtn2.hidden = YES;
-    //OPbtn3.hidden = YES;
+    [self OptionCounter:0];
+    [self OptionSound];
+
+    OPbtn1.hidden = YES;
+    OPbtn2.hidden = YES;
+    OPbtn3.hidden = YES;
 }
 
 
@@ -194,6 +196,87 @@ UIButton *OPbtn3;
 
 
 
+/*オプションのサウンド処理*/
+- (void)OptionSound{
+    //音の再生
+    int sound = rand()%20;
+    NSString *path;
+    
+    switch (sound) {
+        case 0:
+            path = [[NSBundle mainBundle] pathForResource:@"meka" ofType:@"mp3"];
+            break;
+        case 1:
+            path = [[NSBundle mainBundle] pathForResource:@"onara" ofType:@"mp3"];
+            break;
+        case 2:
+            path = [[NSBundle mainBundle] pathForResource:@"ghost" ofType:@"mp3"];
+            break;
+        case 3:
+            path = [[NSBundle mainBundle] pathForResource:@"fafafa" ofType:@"mp3"];
+            break;
+        case 4:
+            path = [[NSBundle mainBundle] pathForResource:@"howa" ofType:@"mp3"];
+            break;
+        case 5:
+            path = [[NSBundle mainBundle] pathForResource:@"dog" ofType:@"mp3"];
+            break;
+        case 6:
+            path = [[NSBundle mainBundle] pathForResource:@"glass" ofType:@"mp3"];
+            break;
+        case 7:
+            path = [[NSBundle mainBundle] pathForResource:@"xmas" ofType:@"mp3"];
+            break;
+        case 8:
+            path = [[NSBundle mainBundle] pathForResource:@"goki" ofType:@"mp3"];
+            break;
+        case 9:
+            path = [[NSBundle mainBundle] pathForResource:@"suspense" ofType:@"mp3"];
+            break;
+        case 10:
+            path = [[NSBundle mainBundle] pathForResource:@"thinking" ofType:@"mp3"];
+            break;
+        case 11:
+            path = [[NSBundle mainBundle] pathForResource:@"chainsaw" ofType:@"mp3"];
+            break;
+        case 12:
+            path = [[NSBundle mainBundle] pathForResource:@"saw" ofType:@"mp3"];
+            break;
+        case 13:
+            path = [[NSBundle mainBundle] pathForResource:@"pen" ofType:@"mp3"];
+            break;
+        case 14:
+            path = [[NSBundle mainBundle] pathForResource:@"zannen" ofType:@"mp3"];
+            break;
+        case 15:
+            path = [[NSBundle mainBundle] pathForResource:@"tansan" ofType:@"mp3"];
+            break;
+        case 16:
+            path = [[NSBundle mainBundle] pathForResource:@"ka" ofType:@"mp3"];
+            break;
+        case 17:
+            path = [[NSBundle mainBundle] pathForResource:@"metal" ofType:@"mp3"];
+            break;
+        case 18:
+            path = [[NSBundle mainBundle] pathForResource:@"mistake" ofType:@"mp3"];
+            break;
+        case 19:
+            path = [[NSBundle mainBundle] pathForResource:@"drill" ofType:@"mp3"];
+            break;
+    }
+    
+    NSURL *url  = [NSURL fileURLWithPath:path];
+    
+    audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    
+    
+    audio.volume = 0.5;
+    audio.numberOfLoops = 0;
+    
+    [audio prepareToPlay];
+    [audio play];
+    
+}
 
 
 
