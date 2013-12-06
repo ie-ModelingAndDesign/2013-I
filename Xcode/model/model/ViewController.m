@@ -83,15 +83,15 @@ UIButton *OPbtn3;
      forControlEvents:UIControlEventTouchUpInside];
     
     [OPbtn1 addTarget:self
-               action:@selector(OPbtn1_Tapped:)
+               action:@selector(OptionBtn_Tapped:)
      forControlEvents:UIControlEventTouchUpInside];
     
     [OPbtn2 addTarget:self
-               action:@selector(OPbtn2_Tapped:)
+               action:@selector(OptionBtn_Tapped:)
      forControlEvents:UIControlEventTouchUpInside];
     
     [OPbtn3 addTarget:self
-               action:@selector(OPbtn3_Tapped:)
+               action:@selector(OptionBtn_Tapped:)
      forControlEvents:UIControlEventTouchUpInside];
     
     
@@ -157,83 +157,43 @@ UIButton *OPbtn3;
 }
 
 
+
+
 /**
- * ボタン1がタップされたとき
+ * オプションボタンの関数細分化
  */
-- (IBAction)OPbtn1_Tapped:(id)sender {
-    //音の再生
-    int sound = rand()%3;
-    
-    if (sound==0){
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"おなら" ofType:@"mp3"];
-        NSURL *url  = [NSURL fileURLWithPath:path];
-    
-        audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    }
-    else if (sound==1){
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"炭酸飲料缶" ofType:@"mp3"];
-        NSURL *url  = [NSURL fileURLWithPath:path];
-        
-        audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    }
-    else{
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"残念" ofType:@"mp3"];
-        NSURL *url  = [NSURL fileURLWithPath:path];
-        
-        audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    }
-    
-    audio.volume = 0.5;
-    audio.numberOfLoops = 1;
-    
-    [audio prepareToPlay];
-    [audio play];
+
+- (IBAction)OptionBtn_Tapped:(id)sender {
+ 
+    [self OptionCounter:0];
     
     //OPbtn1.hidden = YES;
-    OPbtn2.hidden = YES;
-    OPbtn3.hidden = YES;
+    //OPbtn2.hidden = YES;
+    //OPbtn3.hidden = YES;
 }
 
-/**
- * ボタン2がタップされたとき
- */
-- (IBAction)OPbtn2_Tapped:(id)sender {
 
-    int a = rand()%3;
+- (void)OptionCounter:(id)sender {
     
-    if (a==0){ //カウントを1000000にリセットする
+    int a = rand()%4;
+    
+    if (a == 0){                       //カウントを1000000に(リセット)する
         i = 0;
         counter.text = @"1000000";
-    }
-    else if (a==1){ //カウントを500000にする
+    }else if (a == 1){                 //カウントを500000にする
         i = 500000;
         counter.text = @"500000";
-    }
-    else{ //カウントを100にする
+    }else if (a == 2){                 //カウントを100にする
         i = 999900;
         counter.text = @"100";
+    }else {                            //カウントを+100する
+        i = i - 100;
+        counter.text = [NSString stringWithFormat:@"%d", 1000000 - i];
     }
-
-    
-    OPbtn1.hidden = YES;
-    //OPbtn2.hidden = YES;
-    OPbtn3.hidden = YES;
 }
 
 
-/**
- * ボタン3がタップされたとき
- */
-- (IBAction)OPbtn3_Tapped:(id)sender {
-    //カウントを+100する
-    i = i - 100;
-    counter.text = [NSString stringWithFormat:@"%d", 1000000 - i];
 
-    OPbtn1.hidden = YES;
-    OPbtn2.hidden = YES;
-    OPbtn3.hidden = YES;
-
-}
 
 
 
