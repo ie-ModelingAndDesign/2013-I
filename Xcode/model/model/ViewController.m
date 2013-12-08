@@ -19,6 +19,9 @@
 UIButton *OPbtn1;
 UIButton *OPbtn2;
 UIButton *OPbtn3;
+UIButton *OPbtn4;
+UIButton *OPbtn5;
+UIButton *OPbtn6;
 
 
 - (void)viewDidLoad
@@ -36,6 +39,12 @@ UIButton *OPbtn3;
     [UIButton buttonWithType:UIButtonTypeRoundedRect];
     OPbtn3 =
     [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    OPbtn4 =
+    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    OPbtn5 =
+    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    OPbtn6 =
+    [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
     
     
@@ -48,6 +57,9 @@ UIButton *OPbtn3;
     OPbtn1.center = CGPointMake(50, 75);
     OPbtn2.center = CGPointMake(150, 75);
     OPbtn3.center = CGPointMake(250, 75);
+    OPbtn4.center = CGPointMake(50, 345);
+    OPbtn5.center = CGPointMake(150,345);
+    OPbtn6.center = CGPointMake(250,345);
     
     
     // キャプションを設定
@@ -58,18 +70,30 @@ UIButton *OPbtn3;
             forState:UIControlStateNormal];
     [OPbtn3 setTitle:@"push"
             forState:UIControlStateNormal];
-    
+    [OPbtn4 setTitle:@"push"
+            forState:UIControlStateNormal];
+    [OPbtn5 setTitle:@"push"
+            forState:UIControlStateNormal];
+    [OPbtn6 setTitle:@"push"
+            forState:UIControlStateNormal];
+
     
     // キャプションに合わせてサイズを設定
     [OPbtn1 sizeToFit];
     [OPbtn2 sizeToFit];
     [OPbtn3 sizeToFit];
+    [OPbtn4 sizeToFit];
+    [OPbtn5 sizeToFit];
+    [OPbtn6 sizeToFit];
     
     
     // 初期状態で オプションボタン非表示
     OPbtn1.hidden = YES;
     OPbtn2.hidden = YES;
     OPbtn3.hidden = YES;
+    OPbtn4.hidden = YES;
+    OPbtn5.hidden = YES;
+    OPbtn6.hidden = YES;
     
     
     
@@ -94,6 +118,18 @@ UIButton *OPbtn3;
                action:@selector(OptionBtn_Tapped:)
      forControlEvents:UIControlEventTouchUpInside];
     
+    [OPbtn4 addTarget:self
+               action:@selector(OptionBtn_Tapped:)
+     forControlEvents:UIControlEventTouchUpInside];
+    
+    [OPbtn5 addTarget:self
+               action:@selector(OptionBtn_Tapped:)
+     forControlEvents:UIControlEventTouchUpInside];
+    
+    [OPbtn6 addTarget:self
+               action:@selector(OptionBtn_Tapped:)
+     forControlEvents:UIControlEventTouchUpInside];
+    
     
     
     // ボタンをビューに追加
@@ -104,7 +140,9 @@ UIButton *OPbtn3;
     [self.view addSubview:OPbtn1];
     [self.view addSubview:OPbtn2];
     [self.view addSubview:OPbtn3];
-    
+    [self.view addSubview:OPbtn4];
+    [self.view addSubview:OPbtn5];
+    [self.view addSubview:OPbtn6];
 }
 
 - (void)didReceiveMemoryWarning
