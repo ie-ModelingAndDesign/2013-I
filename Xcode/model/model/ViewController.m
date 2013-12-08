@@ -177,6 +177,21 @@ UIButton *OPbtn6;
     }else {
         OPbtn3.hidden = YES;
     }
+    if (i % 30 == 0){
+        OPbtn4.hidden = NO;
+    }else {
+        OPbtn4.hidden = YES;
+    }
+    if (i % 20 == 0){
+        OPbtn5.hidden = NO;
+    }else {
+        OPbtn5.hidden = YES;
+    }
+    if (i % 10 == 0){
+        OPbtn6.hidden = NO;
+    }else {
+        OPbtn6.hidden = YES;
+    }
     
 
     // アラート
