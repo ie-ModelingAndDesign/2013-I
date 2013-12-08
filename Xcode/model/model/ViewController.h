@@ -21,5 +21,6 @@
 - (void)viewChange:(int)i;
 - (void)incrementI:(UIButton*)button;
 - (void)OptionCounter:()value;
+- (void)CounterJudged:()value;
 
 @end

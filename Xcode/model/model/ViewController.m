@@ -177,20 +177,48 @@ UIButton *OPbtn3;
 
 - (void)OptionCounter:(id)sender {
     
-    int a = rand()%4;
     
-    if (a == 0){                       //カウントを1000000に(リセット)する
+    int a = rand()%100;
+    
+    if (a == 1){                       //カウントを1000000に(リセット)する
         i = 0;
         counter.text = @"1000000";
-    }else if (a == 1){                 //カウントを500000にする
+    }else if (a == 2){                 //カウントを500000にする
         i = 500000;
         counter.text = @"500000";
-    }else if (a == 2){                 //カウントを100にする
+    }else if (a == 3){                 //カウントを100にする
         i = 999900;
         counter.text = @"100";
-    }else {                            //カウントを+100する
+    }else if (a%2 == 0){               //カウントを+100する
         i = i - 100;
-        counter.text = [NSString stringWithFormat:@"%d", 1000000 - i];
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }else if (a%2 == 1){               //カウントを+200する
+        i = i - 200;
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }else if (a%3 == 1){               //カウントを-100する
+        i = i + 100;
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }else if (a%3 == 2){               //カウントを-200する
+        i = i + 200;
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }
+    
+    [self CounterJudged:0];
+}
+
+
+
+
+/**
+ * カウンターの上限値(100万)、下限値(0)を設定
+ */
+- (void)CounterJudged:(id)sender {
+    if (1000000 - i > 1000000){
+        i = 0;
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }else if (1000000 - i < 0){
+        i = 999999;
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
     }
 }
 
