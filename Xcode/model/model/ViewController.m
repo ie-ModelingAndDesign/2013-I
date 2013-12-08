@@ -225,6 +225,9 @@ UIButton *OPbtn6;
     OPbtn1.hidden = YES;
     OPbtn2.hidden = YES;
     OPbtn3.hidden = YES;
+    OPbtn4.hidden = YES;
+    OPbtn5.hidden = YES;
+    OPbtn6.hidden = YES;
 }
 
 
