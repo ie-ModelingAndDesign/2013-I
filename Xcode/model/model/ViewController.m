@@ -236,26 +236,26 @@ UIButton *OPbtn6;
     
     int a = rand()%100;
     
-    if (a == 1){                       //カウントを1000000に(リセット)する
+    if (a<6){                              //カウントを1000000に(リセット)する
         i = 0;
         counter.text = @"1000000";
-    }else if (a == 2){                 //カウントを500000にする
+    }else if (6<a && a<9){                 //カウントを500000にする
         i = 500000;
         counter.text = @"500000";
-    }else if (a == 3){                 //カウントを100にする
+    }else if (a == 10){                    //カウントを100にする
         i = 999900;
         counter.text = @"100";
-    }else if (a%2 == 0){               //カウントを+100する
-        i = i - 100;
+    }else if (10<a && a<25){               //カウントを+1000する
+        i = i - 1000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-    }else if (a%2 == 1){               //カウントを+200する
-        i = i - 200;
+    }else if (25<a && a<40){               //カウントを-1000する
+        i = i + 1000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-    }else if (a%3 == 1){               //カウントを-100する
-        i = i + 100;
+    }else if (40<a && a<45){               //カウントを+100000する
+        i = i - 100000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-    }else if (a%3 == 2){               //カウントを-200する
-        i = i + 200;
+    }else if (45<a && a<50){               //カウントを-100000する
+        i = i + 100000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
     }
     
