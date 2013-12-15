@@ -38,6 +38,7 @@
 		67CC36361842CF1F004BCF27 /* sweet2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36321842CF1F004BCF27 /* sweet2.jpg */; };
 		67CC36371842CF1F004BCF27 /* sweet3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36331842CF1F004BCF27 /* sweet3.jpg */; };
 		67CC36381842CF1F004BCF27 /* sweet4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36341842CF1F004BCF27 /* sweet4.jpeg */; };
+		68475300185DD57800278573 /* 001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 684752FF185DD57800278573 /* 001.mp3 */; };
 		A6152DF21851AD2900A82305 /* chainsaw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDE1851AD2900A82305 /* chainsaw.mp3 */; };
 		A6152DF31851AD2900A82305 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDF1851AD2900A82305 /* dog.mp3 */; };
 		A6152DF41851AD2900A82305 /* drill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE01851AD2900A82305 /* drill.mp3 */; };
@@ -59,7 +60,6 @@
 		A6152E041851AD2900A82305 /* xmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF01851AD2900A82305 /* xmas.mp3 */; };
 		A6152E051851AD2900A82305 /* zannen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF11851AD2900A82305 /* zannen.mp3 */; };
 		A6E43050185DB83D0013EC0B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */; };
-		A6E43052185DBA870013EC0B /* 001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E43051185DBA870013EC0B /* 001.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +109,7 @@
 		67CC36321842CF1F004BCF27 /* sweet2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet2.jpg; sourceTree = "<group>"; };
 		67CC36331842CF1F004BCF27 /* sweet3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet3.jpg; sourceTree = "<group>"; };
 		67CC36341842CF1F004BCF27 /* sweet4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet4.jpeg; sourceTree = "<group>"; };
+		684752FF185DD57800278573 /* 001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 001.mp3; sourceTree = "<group>"; };
 		A6152DDE1851AD2900A82305 /* chainsaw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chainsaw.mp3; sourceTree = "<group>"; };
 		A6152DDF1851AD2900A82305 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
 		A6152DE01851AD2900A82305 /* drill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drill.mp3; sourceTree = "<group>"; };
@@ -130,7 +131,6 @@
 		A6152DF01851AD2900A82305 /* xmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmas.mp3; sourceTree = "<group>"; };
 		A6152DF11851AD2900A82305 /* zannen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zannen.mp3; sourceTree = "<group>"; };
 		A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A6E43051185DBA870013EC0B /* 001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 001.mp3; path = ../../../../../../001.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,7 +270,7 @@
 		A6152DDD1851AD2900A82305 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				A6E43051185DBA870013EC0B /* 001.mp3 */,
+				684752FF185DD57800278573 /* 001.mp3 */,
 				A6152DDE1851AD2900A82305 /* chainsaw.mp3 */,
 				A6152DDF1851AD2900A82305 /* dog.mp3 */,
 				A6152DE01851AD2900A82305 /* drill.mp3 */,
@@ -372,11 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6152DFF1851AD2900A82305 /* pen.mp3 in Resources */,
+				68475300185DD57800278573 /* 001.mp3 in Resources */,
 				67836F0F185DCC820030195F /* rennga6.jpg in Resources */,
 				A6152DF21851AD2900A82305 /* chainsaw.mp3 in Resources */,
 				A6152DFD1851AD2900A82305 /* mistake.mp3 in Resources */,
 				A6152DF71851AD2900A82305 /* glass.mp3 in Resources */,
-				A6E43052185DBA870013EC0B /* 001.mp3 in Resources */,
 				A6152DF61851AD2900A82305 /* ghost.mp3 in Resources */,
 				A6152DFA1851AD2900A82305 /* ka.mp3 in Resources */,
 				A6152DF81851AD2900A82305 /* goki.mp3 in Resources */,
