@@ -391,14 +391,19 @@ UIButton *OPbtn6;
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
     
     NSArray *images = @[
-                        [UIImage imageNamed:@"sweet1.jpg"],
-                        [UIImage imageNamed:@"sweet2.jpg"],
-                        [UIImage imageNamed:@"sweet3.jpg"],
-                        [UIImage imageNamed:@"sweet4.jpeg"]
+                        [UIImage imageNamed:@"rennga1.jpg"],
+                        [UIImage imageNamed:@"rennga2.jpg"],
+                        [UIImage imageNamed:@"rennga3.jpg"],
+                        [UIImage imageNamed:@"rennga4.jpg"],
+                        [UIImage imageNamed:@"rennga5.jpg"],
+                        [UIImage imageNamed:@"rennga6.jpg"],
+                        [UIImage imageNamed:@"rennga7.jpg"],
+                        [UIImage imageNamed:@"rennga8.jpg"],
+                        [UIImage imageNamed:@"rennga9.jpg"]
                         ];
     
     int ia = (1000000 - ie) % 250;
-    if(ia == 0) {
+    if(ie == 0) {
         imageView.image = images[0];
     } else if(ia == 100){
         imageView.image = images[1];
@@ -406,6 +411,16 @@ UIButton *OPbtn6;
         imageView.image = images[2];
     } else if(ia == 249){
         imageView.image = images[3];
+    } else if(ia == 301){
+        imageView.image = images[4];
+    } else if(ia == 654){
+        imageView.image = images[5];
+    } else if(ia == 123){
+        imageView.image = images[6];
+    } else if(ia == 10){
+        imageView.image = images[7];
+    } else if(ia == 50){
+        imageView.image = images[8];
     }
     
     // UIImageViewのインスタンスをビューに追加
