@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#include <AudioToolbox/AudioToolbox.h> 
 
 @interface ViewController : UIViewController {
     int i;
@@ -15,8 +16,14 @@
     __weak IBOutlet UILabel *counter;
 @public AVAudioPlayer *audio; //音のメンバ変数
     
+    //効果音のID
+    CFURLRef soundURL;
+    SystemSoundID soundID;
     
 }
+
+@property(readwrite) CFURLRef soundURL;
+@property(readonly) SystemSoundID soundID;
 
 - (void)viewChange:(int)i;
 - (void)incrementI:(UIButton*)button;

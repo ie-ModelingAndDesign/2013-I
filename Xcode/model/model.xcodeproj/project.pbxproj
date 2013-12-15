@@ -49,6 +49,8 @@
 		A6152E031851AD2900A82305 /* thinking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEF1851AD2900A82305 /* thinking.mp3 */; };
 		A6152E041851AD2900A82305 /* xmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF01851AD2900A82305 /* xmas.mp3 */; };
 		A6152E051851AD2900A82305 /* zannen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF11851AD2900A82305 /* zannen.mp3 */; };
+		A6E43050185DB83D0013EC0B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */; };
+		A6E43052185DBA870013EC0B /* 001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E43051185DBA870013EC0B /* 001.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		A6152DEF1851AD2900A82305 /* thinking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thinking.mp3; sourceTree = "<group>"; };
 		A6152DF01851AD2900A82305 /* xmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmas.mp3; sourceTree = "<group>"; };
 		A6152DF11851AD2900A82305 /* zannen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zannen.mp3; sourceTree = "<group>"; };
+		A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A6E43051185DBA870013EC0B /* 001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 001.mp3; path = ../../../../../../001.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E43050185DB83D0013EC0B /* AudioToolbox.framework in Frameworks */,
 				654CF81B184AF168004923EF /* AVFoundation.framework in Frameworks */,
 				67CC35FF1842CDCA004BCF27 /* CoreGraphics.framework in Frameworks */,
 				67CC36011842CDCA004BCF27 /* UIKit.framework in Frameworks */,
@@ -158,6 +163,7 @@
 		67CC35FB1842CDCA004BCF27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */,
 				654CF81A184AF168004923EF /* AVFoundation.framework */,
 				67CC35FC1842CDCA004BCF27 /* Foundation.framework */,
 				67CC35FE1842CDCA004BCF27 /* CoreGraphics.framework */,
@@ -229,6 +235,7 @@
 		A6152DDD1851AD2900A82305 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				A6E43051185DBA870013EC0B /* 001.mp3 */,
 				A6152DDE1851AD2900A82305 /* chainsaw.mp3 */,
 				A6152DDF1851AD2900A82305 /* dog.mp3 */,
 				A6152DE01851AD2900A82305 /* drill.mp3 */,
@@ -333,6 +340,7 @@
 				A6152DF21851AD2900A82305 /* chainsaw.mp3 in Resources */,
 				A6152DFD1851AD2900A82305 /* mistake.mp3 in Resources */,
 				A6152DF71851AD2900A82305 /* glass.mp3 in Resources */,
+				A6E43052185DBA870013EC0B /* 001.mp3 in Resources */,
 				A6152DF61851AD2900A82305 /* ghost.mp3 in Resources */,
 				A6152DFA1851AD2900A82305 /* ka.mp3 in Resources */,
 				A6152DF81851AD2900A82305 /* goki.mp3 in Resources */,

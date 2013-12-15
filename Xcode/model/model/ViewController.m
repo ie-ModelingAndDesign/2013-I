@@ -23,6 +23,8 @@ UIButton *OPbtn4;
 UIButton *OPbtn5;
 UIButton *OPbtn6;
 
+@synthesize soundURL;
+@synthesize soundID;
 
 - (void)viewDidLoad
 {
@@ -143,6 +145,14 @@ UIButton *OPbtn6;
     [self.view addSubview:OPbtn4];
     [self.view addSubview:OPbtn5];
     [self.view addSubview:OPbtn6];
+    
+    CFBundleRef mainBundle;
+    mainBundle = CFBundleGetMainBundle ();
+    
+    soundURL  = CFBundleCopyResourceURL (mainBundle,CFSTR ("001"),CFSTR ("mp3"),NULL);
+    AudioServicesCreateSystemSoundID (soundURL, &soundID);
+    CFRelease (soundURL);
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -362,7 +372,10 @@ UIButton *OPbtn6;
     
 }
 
-
+//効果音
+-(void) Effective_sound{
+    AudioServicesPlaySystemSound (soundID);
+}
 
 
 
@@ -370,6 +383,7 @@ UIButton *OPbtn6;
 -(void) incrementI:(UIButton*)button{
     m++;
     [self viewChange:(m)];
+    [self Effective_sound];
 }
 
 -(void)viewChange:(int)ie
@@ -399,6 +413,7 @@ UIButton *OPbtn6;
     [self.view addSubview:imageView];
     
 }
+
 
 /**
  * カウントが0になったときのアラートの動作
