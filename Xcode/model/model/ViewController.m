@@ -212,7 +212,6 @@ UIButton *OPbtn6;
                           cancelButtonTitle:@"キャンセル"
                           otherButtonTitles:@"戻る", nil];
     
-    
     if (i==1000000){
         [alert show];
     }
