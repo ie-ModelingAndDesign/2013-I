@@ -34,10 +34,6 @@
 		67CC361E1842CDCB004BCF27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CC36001842CDCA004BCF27 /* UIKit.framework */; };
 		67CC36261842CDCB004BCF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36241842CDCB004BCF27 /* InfoPlist.strings */; };
 		67CC36281842CDCB004BCF27 /* modelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CC36271842CDCB004BCF27 /* modelTests.m */; };
-		67CC36351842CF1F004BCF27 /* sweet1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36311842CF1F004BCF27 /* sweet1.jpg */; };
-		67CC36361842CF1F004BCF27 /* sweet2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36321842CF1F004BCF27 /* sweet2.jpg */; };
-		67CC36371842CF1F004BCF27 /* sweet3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36331842CF1F004BCF27 /* sweet3.jpg */; };
-		67CC36381842CF1F004BCF27 /* sweet4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36341842CF1F004BCF27 /* sweet4.jpeg */; };
 		68475300185DD57800278573 /* 001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 684752FF185DD57800278573 /* 001.mp3 */; };
 		A6152DF21851AD2900A82305 /* chainsaw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDE1851AD2900A82305 /* chainsaw.mp3 */; };
 		A6152DF31851AD2900A82305 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDF1851AD2900A82305 /* dog.mp3 */; };
@@ -105,10 +101,6 @@
 		67CC36231842CDCB004BCF27 /* model.temp_caseinsensitive_rename_2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "model.temp_caseinsensitive_rename_2Tests-Info.plist"; sourceTree = "<group>"; };
 		67CC36251842CDCB004BCF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67CC36271842CDCB004BCF27 /* modelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modelTests.m; sourceTree = "<group>"; };
-		67CC36311842CF1F004BCF27 /* sweet1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet1.jpg; sourceTree = "<group>"; };
-		67CC36321842CF1F004BCF27 /* sweet2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet2.jpg; sourceTree = "<group>"; };
-		67CC36331842CF1F004BCF27 /* sweet3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet3.jpg; sourceTree = "<group>"; };
-		67CC36341842CF1F004BCF27 /* sweet4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweet4.jpeg; sourceTree = "<group>"; };
 		684752FF185DD57800278573 /* 001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 001.mp3; sourceTree = "<group>"; };
 		A6152DDE1851AD2900A82305 /* chainsaw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chainsaw.mp3; sourceTree = "<group>"; };
 		A6152DDF1851AD2900A82305 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
@@ -217,7 +209,6 @@
 				67CC36111842CDCA004BCF27 /* ViewController.h */,
 				67CC36121842CDCA004BCF27 /* ViewController.m */,
 				A6152DDD1851AD2900A82305 /* Sounds */,
-				68146B3B1846DD26001ACE1B /* Images */,
 				67CC36141842CDCA004BCF27 /* Images.xcassets */,
 				67CC36031842CDCA004BCF27 /* Supporting Files */,
 			);
@@ -254,17 +245,6 @@
 				67CC36241842CDCB004BCF27 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		68146B3B1846DD26001ACE1B /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				67CC36311842CF1F004BCF27 /* sweet1.jpg */,
-				67CC36321842CF1F004BCF27 /* sweet2.jpg */,
-				67CC36331842CF1F004BCF27 /* sweet3.jpg */,
-				67CC36341842CF1F004BCF27 /* sweet4.jpeg */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		A6152DDD1851AD2900A82305 /* Sounds */ = {
@@ -382,18 +362,15 @@
 				A6152DF81851AD2900A82305 /* goki.mp3 in Resources */,
 				67836F10185DCC820030195F /* rennga7.jpg in Resources */,
 				654CF819184AF0DB004923EF /* 残念.mp3 in Resources */,
-				67CC36371842CF1F004BCF27 /* sweet3.jpg in Resources */,
 				A6152E041851AD2900A82305 /* xmas.mp3 in Resources */,
 				67836F0A185DCC820030195F /* rennga1.jpg in Resources */,
 				A6152DF31851AD2900A82305 /* dog.mp3 in Resources */,
 				A6152E021851AD2900A82305 /* tansan.mp3 in Resources */,
 				67836F12185DCC820030195F /* rennga9.jpg in Resources */,
 				A6152E051851AD2900A82305 /* zannen.mp3 in Resources */,
-				67CC36361842CF1F004BCF27 /* sweet2.jpg in Resources */,
 				654CF815184AF0AD004923EF /* おなら.mp3 in Resources */,
 				67836F0D185DCC820030195F /* rennga4.jpg in Resources */,
 				67836F0C185DCC820030195F /* rennga3.jpg in Resources */,
-				67CC36381842CF1F004BCF27 /* sweet4.jpeg in Resources */,
 				A6152DF51851AD2900A82305 /* fafafa.mp3 in Resources */,
 				A6152E011851AD2900A82305 /* suspense.mp3 in Resources */,
 				A6152DFE1851AD2900A82305 /* onara.mp3 in Resources */,
@@ -406,7 +383,6 @@
 				A6152DFB1851AD2900A82305 /* meka.mp3 in Resources */,
 				67836F0B185DCC820030195F /* rennga2.jpg in Resources */,
 				67836F0E185DCC820030195F /* rennga5.jpg in Resources */,
-				67CC36351842CF1F004BCF27 /* sweet1.jpg in Resources */,
 				A6152DFC1851AD2900A82305 /* metal.mp3 in Resources */,
 				A6152DF41851AD2900A82305 /* drill.mp3 in Resources */,
 				67836F11185DCC820030195F /* rennga8.jpg in Resources */,
