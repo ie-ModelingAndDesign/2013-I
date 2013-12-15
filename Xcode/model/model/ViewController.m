@@ -136,7 +136,7 @@ UIButton *OPbtn6;
     
     // ボタンをビューに追加
     [self.view addSubview:button];
-    [self viewChange:(m)];
+    [self viewChange:(i)];
     
     
     [self.view addSubview:OPbtn1];
@@ -234,7 +234,7 @@ UIButton *OPbtn6;
     
     [self OptionCounter:0];
     [self OptionSound];
-
+    [self viewChange:(i)];
     OPbtn1.hidden = YES;
     OPbtn2.hidden = YES;
     OPbtn3.hidden = YES;

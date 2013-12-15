@@ -12,7 +12,7 @@
 
 @interface ViewController : UIViewController {
     int i;
-    int m;
+ //   int m;
     __weak IBOutlet UILabel *counter;
 @public AVAudioPlayer *audio; //音のメンバ変数
     
@@ -26,7 +26,7 @@
 @property(readonly) SystemSoundID soundID;
 
 - (void)viewChange:(int)i;
-- (void)incrementI:(UIButton*)button;
+//- (void)incrementI:(UIButton*)button;
 - (void)OptionCounter:()value;
 - (void)CounterJudged:()value;
 
