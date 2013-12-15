@@ -100,9 +100,9 @@ UIButton *OPbtn6;
     
     
     // ボタンがタップされたときに呼ばれるメソッドを設定
-    [button addTarget:self
+    /*[button addTarget:self
                action:@selector(incrementI:)
-     forControlEvents:UIControlEventTouchUpInside];
+     forControlEvents:UIControlEventTouchUpInside];*/
     
     [button addTarget:self
                action:@selector(button_Tapped:)
@@ -168,6 +168,10 @@ UIButton *OPbtn6;
 
 - (void)button_Tapped:(id)sender
 {
+    
+    [self viewChange:(i)];
+    [self Effective_sound];
+    
     // ここに処理を書く
     i++;
     counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
@@ -379,11 +383,11 @@ UIButton *OPbtn6;
 
 
 
--(void) incrementI:(UIButton*)button{
+/*-(void) incrementI:(UIButton*)button{
     m++;
     [self viewChange:(m)];
     [self Effective_sound];
-}
+}*/
 
 -(void)viewChange:(int)ie
 {
@@ -402,26 +406,29 @@ UIButton *OPbtn6;
                         [UIImage imageNamed:@"rennga9.jpg"]
                         ];
     
-    int ia = (1000000 - ie) % 250;
+    //int ia = (1000000 - ie) % 100;
     if(ie == 0) {
         imageView.image = images[0];
-    } else if(ia == 100){
+    } else if(ie == 100000){
         imageView.image = images[1];
-    } else if(ia == 200){
+    } else if(ie == 200000){
         imageView.image = images[2];
-    } else if(ia == 249){
+    } else if(ie == 300000){
         imageView.image = images[3];
-    } else if(ia == 301){
+    } else if(ie == 400000){
         imageView.image = images[4];
-    } else if(ia == 654){
+    } else if(ie == 500000){
         imageView.image = images[5];
-    } else if(ia == 123){
+    } else if(ie == 600000){
         imageView.image = images[6];
-    } else if(ia == 10){
+    } else if(ie == 700000){
         imageView.image = images[7];
-    } else if(ia == 50){
+    } else if(ie == 800000){
         imageView.image = images[8];
+    } else if(ie == 900000){
+        imageView.image = images[9];
     }
+
     
     // UIImageViewのインスタンスをビューに追加
     [self.view addSubview:imageView];
