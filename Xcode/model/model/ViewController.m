@@ -53,7 +53,7 @@ UIButton *OPbtn6;
 
     
     //ボタンのサイズを画像と一緒にする
-    button.frame = CGRectMake(40,100,250,250);
+    button.frame = CGRectMake(0,100,320,250);
     
     // ボタンの位置を設定
     OPbtn1.center = CGPointMake(50, 75);
@@ -391,7 +391,7 @@ UIButton *OPbtn6;
 
 -(void)viewChange:(int)ie
 {
-    CGRect rect = CGRectMake(40,100,250,250);
+    CGRect rect = CGRectMake(0,100,320,250);
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
     
     NSArray *images = @[
