@@ -35,6 +35,7 @@
 		67CC36261842CDCB004BCF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67CC36241842CDCB004BCF27 /* InfoPlist.strings */; };
 		67CC36281842CDCB004BCF27 /* modelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CC36271842CDCB004BCF27 /* modelTests.m */; };
 		68475300185DD57800278573 /* 001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 684752FF185DD57800278573 /* 001.mp3 */; };
+		686E68021864B8320000BFE0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 686E68011864B8320000BFE0 /* button.png */; };
 		A6152DF21851AD2900A82305 /* chainsaw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDE1851AD2900A82305 /* chainsaw.mp3 */; };
 		A6152DF31851AD2900A82305 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DDF1851AD2900A82305 /* dog.mp3 */; };
 		A6152DF41851AD2900A82305 /* drill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DE01851AD2900A82305 /* drill.mp3 */; };
@@ -102,6 +103,7 @@
 		67CC36251842CDCB004BCF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67CC36271842CDCB004BCF27 /* modelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modelTests.m; sourceTree = "<group>"; };
 		684752FF185DD57800278573 /* 001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 001.mp3; sourceTree = "<group>"; };
+		686E68011864B8320000BFE0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		A6152DDE1851AD2900A82305 /* chainsaw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chainsaw.mp3; sourceTree = "<group>"; };
 		A6152DDF1851AD2900A82305 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
 		A6152DE01851AD2900A82305 /* drill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drill.mp3; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				67CC360C1842CDCA004BCF27 /* AppDelegate.m */,
 				67CC360E1842CDCA004BCF27 /* Main.storyboard */,
 				67CC36111842CDCA004BCF27 /* ViewController.h */,
+				686E68011864B8320000BFE0 /* button.png */,
 				67CC36121842CDCA004BCF27 /* ViewController.m */,
 				A6152DDD1851AD2900A82305 /* Sounds */,
 				67CC36141842CDCA004BCF27 /* Images.xcassets */,
@@ -366,6 +369,7 @@
 				67836F0A185DCC820030195F /* rennga1.jpg in Resources */,
 				A6152DF31851AD2900A82305 /* dog.mp3 in Resources */,
 				A6152E021851AD2900A82305 /* tansan.mp3 in Resources */,
+				686E68021864B8320000BFE0 /* button.png in Resources */,
 				67836F12185DCC820030195F /* rennga9.jpg in Resources */,
 				A6152E051851AD2900A82305 /* zannen.mp3 in Resources */,
 				654CF815184AF0AD004923EF /* おなら.mp3 in Resources */,
