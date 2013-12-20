@@ -36,38 +36,53 @@ UIButton *OPbtn6;
     [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
     OPbtn1 =
-    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [UIButton buttonWithType:UIButtonTypeCustom];
     OPbtn2 =
-    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [UIButton buttonWithType:UIButtonTypeCustom];
     OPbtn3 =
-    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [UIButton buttonWithType:UIButtonTypeCustom];
     OPbtn4 =
-    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [UIButton buttonWithType:UIButtonTypeCustom];
     OPbtn5 =
-    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [UIButton buttonWithType:UIButtonTypeCustom];
     OPbtn6 =
-    [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [UIButton buttonWithType:UIButtonTypeCustom];
     
     
+    // オプションボタンの画像
+    [OPbtn1 setImage:[UIImage imageNamed:@"button.png"]
+            forState:UIControlStateNormal];
+    [OPbtn2 setImage:[UIImage imageNamed:@"button.png"]
+            forState:UIControlStateNormal];
+    [OPbtn3 setImage:[UIImage imageNamed:@"button.png"]
+            forState:UIControlStateNormal];
+    [OPbtn4 setImage:[UIImage imageNamed:@"button.png"]
+            forState:UIControlStateNormal];
+    [OPbtn5 setImage:[UIImage imageNamed:@"button.png"]
+            forState:UIControlStateNormal];
+    [OPbtn6 setImage:[UIImage imageNamed:@"button.png"]
+            forState:UIControlStateNormal];
     
-
     
     //ボタンのサイズを画像と一緒にする
     button.frame = CGRectMake(0,100,320,250);
     
-    // ボタンの位置を設定
-    OPbtn1.center = CGPointMake(50, 75);
-    OPbtn2.center = CGPointMake(150, 75);
-    OPbtn3.center = CGPointMake(250, 75);
-    OPbtn4.center = CGPointMake(50, 345);
-    OPbtn5.center = CGPointMake(150,345);
-    OPbtn6.center = CGPointMake(250,345);
+    // ボタンの位置とサイズを設定
+    [OPbtn1 setFrame:CGRectMake( 20,  70, 40, 40)];
+    [OPbtn2 setFrame:CGRectMake(140,  70, 40, 40)];
+    [OPbtn3 setFrame:CGRectMake(260,  70, 40, 40)];
+    [OPbtn4 setFrame:CGRectMake( 20, 345, 40, 40)];
+    [OPbtn5 setFrame:CGRectMake(140, 345, 40, 40)];
+    [OPbtn6 setFrame:CGRectMake(260, 345, 40, 40)];
+
     
+
     
+/*
     // キャプションを設定
     
     [OPbtn1 setTitle:@"push"
-            forState:UIControlStateNormal];
+            //forState:UIControlStateNormal];
     [OPbtn2 setTitle:@"push"
             forState:UIControlStateNormal];
     [OPbtn3 setTitle:@"push"
@@ -87,6 +102,7 @@ UIButton *OPbtn6;
     [OPbtn4 sizeToFit];
     [OPbtn5 sizeToFit];
     [OPbtn6 sizeToFit];
+*/
     
     
     // 初期状態で オプションボタン非表示
