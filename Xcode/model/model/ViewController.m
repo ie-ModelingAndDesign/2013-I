@@ -65,15 +65,15 @@ UIButton *OPbtn6;
     
     
     //ボタンのサイズを画像と一緒にする
-    button.frame = CGRectMake(0,100,320,250);
+    button.frame = CGRectMake(0,145,320,250);
     
     // ボタンの位置とサイズを設定
-    [OPbtn1 setFrame:CGRectMake( 20,  70, 40, 40)];
-    [OPbtn2 setFrame:CGRectMake(140,  70, 40, 40)];
-    [OPbtn3 setFrame:CGRectMake(260,  70, 40, 40)];
-    [OPbtn4 setFrame:CGRectMake( 20, 345, 40, 40)];
-    [OPbtn5 setFrame:CGRectMake(140, 345, 40, 40)];
-    [OPbtn6 setFrame:CGRectMake(260, 345, 40, 40)];
+    [OPbtn1 setFrame:CGRectMake( 20,  100, 40, 40)];
+    [OPbtn2 setFrame:CGRectMake(140,  100, 40, 40)];
+    [OPbtn3 setFrame:CGRectMake(260,  100, 40, 40)];
+    [OPbtn4 setFrame:CGRectMake( 20, 400, 40, 40)];
+    [OPbtn5 setFrame:CGRectMake(140, 400, 40, 40)];
+    [OPbtn6 setFrame:CGRectMake(260, 400, 40, 40)];
 
     
 
@@ -407,7 +407,7 @@ UIButton *OPbtn6;
 
 -(void)viewChange:(int)ie
 {
-    CGRect rect = CGRectMake(0,100,320,250);
+    CGRect rect = CGRectMake(0,145,320,250);
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
     
     NSArray *images = @[
