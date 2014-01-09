@@ -16,6 +16,8 @@
     __weak IBOutlet UILabel *counter;
 @public AVAudioPlayer *audio; //音のメンバ変数
     
+    
+    
     //効果音のID
     CFURLRef soundURL;
     SystemSoundID soundID;
@@ -29,5 +31,6 @@
 //- (void)incrementI:(UIButton*)button;
 - (void)OptionCounter:()value;
 - (void)CounterJudged:()value;
+- (void)OptionFrequency:()value;
 
 @end

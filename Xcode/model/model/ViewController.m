@@ -22,13 +22,26 @@ UIButton *OPbtn3;
 UIButton *OPbtn4;
 UIButton *OPbtn5;
 UIButton *OPbtn6;
+int k = 10000;      // 100万のうちに、何回オプションボタンを出現させるか (とりあえず1万回)
+                    // OptionFrequencyの数字も変更する必要あり
+int oprum = 11;     // 作業用変数
+int hairetsu[10000];
 
 @synthesize soundURL;
 @synthesize soundID;
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    // オプションボタンの出現位置をランダムで決定
+    for (int c=0; c<k ;c++){
+        hairetsu[c] = arc4random_uniform(1000000);
+    }
+    
     
     // ボタンを作成
     
@@ -68,9 +81,9 @@ UIButton *OPbtn6;
     button.frame = CGRectMake(0,145,320,250);
     
     // ボタンの位置とサイズを設定
-    [OPbtn1 setFrame:CGRectMake( 20,  100, 40, 40)];
-    [OPbtn2 setFrame:CGRectMake(140,  100, 40, 40)];
-    [OPbtn3 setFrame:CGRectMake(260,  100, 40, 40)];
+    [OPbtn1 setFrame:CGRectMake( 20, 100, 40, 40)];
+    [OPbtn2 setFrame:CGRectMake(140, 100, 40, 40)];
+    [OPbtn3 setFrame:CGRectMake(260, 100, 40, 40)];
     [OPbtn4 setFrame:CGRectMake( 20, 400, 40, 40)];
     [OPbtn5 setFrame:CGRectMake(140, 400, 40, 40)];
     [OPbtn6 setFrame:CGRectMake(260, 400, 40, 40)];
@@ -184,41 +197,47 @@ UIButton *OPbtn6;
 
 - (void)button_Tapped:(id)sender
 {
-    
     [self viewChange:(i)];
     [self Effective_sound];
+    [self OptionFrequency:0];
     
     // ここに処理を書く
     i++;
     counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
     
-    if (i % 10 == 0){
+    if (oprum == 0){
         OPbtn1.hidden = NO;
+        oprum = 11;
     }else {
         OPbtn1.hidden = YES;
     }
-    if (i % 20 == 0){
+    if (oprum % 2 == 0){
         OPbtn2.hidden = NO;
+        oprum = 11;
     }else {
         OPbtn2.hidden = YES;
     }
-    if (i % 30 == 0){
+    if (oprum == 1){
         OPbtn3.hidden = NO;
+        oprum = 11;
     }else {
         OPbtn3.hidden = YES;
     }
-    if (i % 30 == 0){
+    if (oprum % 3 == 0){
         OPbtn4.hidden = NO;
+        oprum = 11;
     }else {
         OPbtn4.hidden = YES;
     }
-    if (i % 20 == 0){
+    if (oprum == 5){
         OPbtn5.hidden = NO;
+        oprum = 11;
     }else {
         OPbtn5.hidden = YES;
     }
-    if (i % 10 == 0){
+    if (oprum == 6){
         OPbtn6.hidden = NO;
+        oprum = 11;
     }else {
         OPbtn6.hidden = YES;
     }
@@ -262,7 +281,7 @@ UIButton *OPbtn6;
 
 - (void)OptionCounter:(id)sender {
     
-    
+    srand(time(NULL));  //被らない数値を渡して初期化
     int a = rand()%100;
     
     if (a<6){                              //カウントを1000000に(リセット)する
@@ -304,6 +323,20 @@ UIButton *OPbtn6;
     }else if (1000000 - i < 0){
         i = 999999;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }
+}
+
+
+
+/**
+ * オプションボタンの出現頻度を設定
+ */
+- (void)OptionFrequency:(id)sender {
+    for (int c=0; c<10000; c++){
+        if (hairetsu[c] == i){
+            oprum = arc4random_uniform(6);;
+            break;
+        }
     }
 }
 
