@@ -22,10 +22,10 @@ UIButton *OPbtn3;
 UIButton *OPbtn4;
 UIButton *OPbtn5;
 UIButton *OPbtn6;
-int k = 10000;      // 100万のうちに、何回オプションボタンを出現させるか (とりあえず1万回)
+int k = 50000;      // 100万のうちに、何回オプションボタンを出現させるか (とりあえず1万回)
                     // OptionFrequencyの数字も変更する必要あり
 int oprum = 11;     // 作業用変数
-int hairetsu[10000];
+int hairetsu[50000];
 
 @synthesize soundURL;
 @synthesize soundID;
@@ -40,7 +40,9 @@ int hairetsu[10000];
     // オプションボタンの出現位置をランダムで決定
     for (int c=0; c<k ;c++){
         hairetsu[c] = arc4random_uniform(1000000);
+        printf("%d\n", 1000000 - hairetsu[c]);
     }
+    
     
     
     // ボタンを作成
@@ -332,7 +334,7 @@ int hairetsu[10000];
  * オプションボタンの出現頻度を設定
  */
 - (void)OptionFrequency:(id)sender {
-    for (int c=0; c<10000; c++){
+    for (int c=0; c<50000; c++){
         if (hairetsu[c] == i){
             oprum = arc4random_uniform(6);;
             break;
