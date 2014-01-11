@@ -56,6 +56,8 @@
 		A6152E031851AD2900A82305 /* thinking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEF1851AD2900A82305 /* thinking.mp3 */; };
 		A6152E041851AD2900A82305 /* xmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF01851AD2900A82305 /* xmas.mp3 */; };
 		A6152E051851AD2900A82305 /* zannen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF11851AD2900A82305 /* zannen.mp3 */; };
+		A66295E31881A13C0023CFED /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A66295E21881A13C0023CFED /* icon.png */; };
+		A66295E51881A42B0023CFED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A66295E41881A42B0023CFED /* Default.png */; };
 		A6E43050185DB83D0013EC0B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +126,8 @@
 		A6152DEF1851AD2900A82305 /* thinking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thinking.mp3; sourceTree = "<group>"; };
 		A6152DF01851AD2900A82305 /* xmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmas.mp3; sourceTree = "<group>"; };
 		A6152DF11851AD2900A82305 /* zannen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zannen.mp3; sourceTree = "<group>"; };
+		A66295E21881A13C0023CFED /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		A66295E41881A42B0023CFED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -172,6 +176,7 @@
 		67CC35F01842CDCA004BCF27 = {
 			isa = PBXGroup;
 			children = (
+				A66295E11881A10F0023CFED /* images */,
 				67CC36021842CDCA004BCF27 /* model */,
 				67CC36211842CDCB004BCF27 /* modelTests */,
 				67CC35FB1842CDCA004BCF27 /* Frameworks */,
@@ -278,6 +283,15 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		A66295E11881A10F0023CFED /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A66295E21881A13C0023CFED /* icon.png */,
+				A66295E41881A42B0023CFED /* Default.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,11 +375,13 @@
 				A6152DFD1851AD2900A82305 /* mistake.mp3 in Resources */,
 				A6152DF71851AD2900A82305 /* glass.mp3 in Resources */,
 				A6152DF61851AD2900A82305 /* ghost.mp3 in Resources */,
+				A66295E51881A42B0023CFED /* Default.png in Resources */,
 				A6152DFA1851AD2900A82305 /* ka.mp3 in Resources */,
 				A6152DF81851AD2900A82305 /* goki.mp3 in Resources */,
 				67836F10185DCC820030195F /* rennga7.jpg in Resources */,
 				654CF819184AF0DB004923EF /* 残念.mp3 in Resources */,
 				A6152E041851AD2900A82305 /* xmas.mp3 in Resources */,
+				A66295E31881A13C0023CFED /* icon.png in Resources */,
 				67836F0A185DCC820030195F /* rennga1.jpg in Resources */,
 				A6152DF31851AD2900A82305 /* dog.mp3 in Resources */,
 				A6152E021851AD2900A82305 /* tansan.mp3 in Resources */,
