@@ -31,6 +31,5 @@
 //- (void)incrementI:(UIButton*)button;
 - (void)OptionCounter:()value;
 - (void)CounterJudged:()value;
-- (void)OptionFrequency:()value;
 
 @end

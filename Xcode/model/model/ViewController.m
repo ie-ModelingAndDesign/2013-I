@@ -22,10 +22,15 @@ UIButton *OPbtn3;
 UIButton *OPbtn4;
 UIButton *OPbtn5;
 UIButton *OPbtn6;
-int k = 50000;      // 100万のうちに、何回オプションボタンを出現させるか (とりあえず1万回)
-                    // OptionFrequencyの数字も変更する必要あり
-int oprum = 11;     // 作業用変数
-int hairetsu[50000];
+
+UILabel *label; // オプション用ラベル
+
+
+                     // オプションボタン、出現頻度のための作業用変数宣言
+int k = 50000;       // 100万のうちに、何回オプションボタンを出現させるか (とりあえず5万回)
+int hairetsu[50000]; // 配列に乱数を格納するための変数
+int oprum = 10;      // どの位置にボタンを表示させるかに使用する乱数の格納変数
+
 
 @synthesize soundURL;
 @synthesize soundID;
@@ -43,9 +48,6 @@ int hairetsu[50000];
         printf("%d\n", 1000000 - hairetsu[c]);
     }
     
-    
-    
-    // ボタンを作成
     
     UIButton *button =
     [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -177,6 +179,7 @@ int hairetsu[50000];
     [self.view addSubview:OPbtn5];
     [self.view addSubview:OPbtn6];
     
+    
     CFBundleRef mainBundle;
     mainBundle = CFBundleGetMainBundle ();
     
@@ -199,51 +202,55 @@ int hairetsu[50000];
 
 - (void)button_Tapped:(id)sender
 {
+    label.hidden = YES;
+    
+    OPbtn1.hidden = YES;
+    OPbtn2.hidden = YES;
+    OPbtn3.hidden = YES;
+    OPbtn4.hidden = YES;
+    OPbtn5.hidden = YES;
+    OPbtn6.hidden = YES;
+    
     [self viewChange:(i)];
     [self Effective_sound];
-    [self OptionFrequency:0];
+    
     
     // ここに処理を書く
     i++;
     counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
     
-    if (oprum == 0){
-        OPbtn1.hidden = NO;
-        oprum = 11;
-    }else {
-        OPbtn1.hidden = YES;
-    }
-    if (oprum % 2 == 0){
-        OPbtn2.hidden = NO;
-        oprum = 11;
-    }else {
-        OPbtn2.hidden = YES;
-    }
-    if (oprum == 1){
-        OPbtn3.hidden = NO;
-        oprum = 11;
-    }else {
-        OPbtn3.hidden = YES;
-    }
-    if (oprum % 3 == 0){
-        OPbtn4.hidden = NO;
-        oprum = 11;
-    }else {
-        OPbtn4.hidden = YES;
-    }
-    if (oprum == 5){
-        OPbtn5.hidden = NO;
-        oprum = 11;
-    }else {
-        OPbtn5.hidden = YES;
-    }
-    if (oprum == 6){
-        OPbtn6.hidden = NO;
-        oprum = 11;
-    }else {
-        OPbtn6.hidden = YES;
+    
+    // オプションボタンの頻度設定
+    // 乱数の値とiが同じになればオプションボタン表示あせるようにする
+    for (int c=0; c<k; c++){
+        if (hairetsu[c] == i){
+            oprum = arc4random_uniform(6) + 1;
+            break;
+        }
     }
     
+    if (oprum < 10) {
+        int a = (oprum / 3) + 1;
+        for (int s=0; s<a; s++){
+        
+            if       (oprum == 1){
+                OPbtn1.hidden = NO;
+            }else if (oprum == 2){
+                OPbtn2.hidden = NO;
+            }else if (oprum == 3){
+                OPbtn3.hidden = NO;
+            }else if (oprum == 4){
+                OPbtn4.hidden = NO;
+            }else if (oprum == 5){
+                OPbtn5.hidden = NO;
+            }else if (oprum == 6){
+                OPbtn6.hidden = NO;
+            }
+            oprum = arc4random_uniform(6) + 1;
+        }
+        oprum = 10;
+    }
+
 
     // アラート
     UIAlertView *alert = [[UIAlertView alloc]
@@ -278,7 +285,7 @@ int hairetsu[50000];
     OPbtn4.hidden = YES;
     OPbtn5.hidden = YES;
     OPbtn6.hidden = YES;
-}
+ }
 
 
 - (void)OptionCounter:(id)sender {
@@ -286,28 +293,47 @@ int hairetsu[50000];
     srand(time(NULL));  //被らない数値を渡して初期化
     int a = rand()%100;
     
+    
+    // オプションボタン用 ラベルの生成
+    label = [[UILabel alloc] init];
+    label.frame = CGRectMake(40, 10, 200, 50);
+    label.textColor = [UIColor blueColor];
+    label.font = [UIFont fontWithName:@"AppleGothic" size:12];
+    [self.view addSubview:label];
+    
+    
     if (a<6){                              //カウントを1000000に(リセット)する
         i = 0;
         counter.text = @"1000000";
+        label.text = @"カウントリセットを行いました^^";
     }else if (6<a && a<9){                 //カウントを500000にする
         i = 500000;
         counter.text = @"500000";
+        label.text = @"カウントを500000にセット^^";
     }else if (a == 10){                    //カウントを100にする
         i = 999900;
         counter.text = @"100";
+        label.text = @"カウントを   100にセット^^";
     }else if (10<a && a<25){               //カウントを+1000する
         i = i - 1000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+        label.text = @"カウントを  +1000しました^^";
     }else if (25<a && a<40){               //カウントを-1000する
         i = i + 1000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+        label.text = @"カウントを  -1000しました^^";
     }else if (40<a && a<45){               //カウントを+100000する
         i = i - 100000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+        label.text = @"カウントを+100000しました^^";
     }else if (45<a && a<50){               //カウントを-100000する
         i = i + 100000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+        label.text = @"カウントを-100000しました^^";
+    }else {
+        label.text = @"          何もしてないよ^^";
     }
+    [self.view addSubview:label];
     
     [self CounterJudged:0];
 }
@@ -325,20 +351,6 @@ int hairetsu[50000];
     }else if (1000000 - i < 0){
         i = 999999;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-    }
-}
-
-
-
-/**
- * オプションボタンの出現頻度を設定
- */
-- (void)OptionFrequency:(id)sender {
-    for (int c=0; c<50000; c++){
-        if (hairetsu[c] == i){
-            oprum = arc4random_uniform(6);;
-            break;
-        }
     }
 }
 
