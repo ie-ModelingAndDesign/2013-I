@@ -42,12 +42,11 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     [super viewDidLoad];
     
     // 「たたけ」というラベル表示
-    labeltouch.hidden = YES;
-
     labeltouch = [[UILabel alloc] init];
-    labeltouch.frame = CGRectMake(40, 440, 200, 50);
-    labeltouch.textColor = [UIColor blueColor];
-    labeltouch.font = [UIFont fontWithName:@"AppleGothic" size:15];
+    labeltouch.backgroundColor = [UIColor whiteColor];
+    labeltouch.frame = CGRectMake(100, 430, 125, 40);
+    labeltouch.textColor = [UIColor blackColor];
+    labeltouch.font = [UIFont fontWithName:@"Hiragino Kaku Gothic ProN W6" size:22];
     labeltouch.text = @"壁を叩いて!!";
     [self.view addSubview:labeltouch];
     
@@ -228,7 +227,7 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     
     
     // ここに処理を書く
-    i++;
+    i= i++;
     counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
     
     
