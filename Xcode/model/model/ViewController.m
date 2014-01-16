@@ -24,7 +24,7 @@ UIButton *OPbtn5;
 UIButton *OPbtn6;
 
 UILabel *label; // オプション用ラベル
-
+UILabel *labeltouch; // 壁たたけ用ラベル
 
                      // オプションボタン、出現頻度のための作業用変数宣言
 int k = 50000;       // 100万のうちに、何回オプションボタンを出現させるか (とりあえず5万回)
@@ -40,6 +40,17 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // 「たたけ」というラベル表示
+    labeltouch.hidden = YES;
+
+    labeltouch = [[UILabel alloc] init];
+    labeltouch.frame = CGRectMake(40, 440, 200, 50);
+    labeltouch.textColor = [UIColor blueColor];
+    labeltouch.font = [UIFont fontWithName:@"AppleGothic" size:15];
+    labeltouch.text = @"壁を叩いて!!";
+    [self.view addSubview:labeltouch];
+    
     
     
     // オプションボタンの出現位置をランダムで決定
@@ -203,6 +214,7 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
 - (void)button_Tapped:(id)sender
 {
     label.hidden = YES;
+    labeltouch.hidden = YES;
     
     OPbtn1.hidden = YES;
     OPbtn2.hidden = YES;
