@@ -641,12 +641,14 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
             NSLog(@"戻る");
             i = 0;
             counter.text = @"1000000";
+            [self viewChange:(i)];
             break;
             
         default: // キャンセルが押されたとき
             NSLog(@"キャンセル");
             i = 0;
             counter.text = @"1000000";
+            [self viewChange:(i)];
             break;
 
     }
