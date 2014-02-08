@@ -32,6 +32,7 @@ int hairetsu[50000]; // 配列に乱数を格納するための変数
 int oprum = 10;      // どの位置にボタンを表示させるかに使用する乱数の格納変数
 
 
+
 @synthesize soundURL;
 @synthesize soundID;
 
@@ -50,7 +51,7 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     labeltouch.text = @"壁を叩いて!!";
     [self.view addSubview:labeltouch];
     
-    
+    i=999899;
     
     // オプションボタンの出現位置をランダムで決定
     for (int c=0; c<k ;c++){

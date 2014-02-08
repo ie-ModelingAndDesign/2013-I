@@ -97,6 +97,7 @@
 		A6152E031851AD2900A82305 /* thinking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DEF1851AD2900A82305 /* thinking.mp3 */; };
 		A6152E041851AD2900A82305 /* xmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF01851AD2900A82305 /* xmas.mp3 */; };
 		A6152E051851AD2900A82305 /* zannen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6152DF11851AD2900A82305 /* zannen.mp3 */; };
+		A6E19295189119CB00EEB1DA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6E19294189119CB00EEB1DA /* icon.png */; };
 		A6E43050185DB83D0013EC0B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -206,6 +207,7 @@
 		A6152DEF1851AD2900A82305 /* thinking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thinking.mp3; sourceTree = "<group>"; };
 		A6152DF01851AD2900A82305 /* xmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmas.mp3; sourceTree = "<group>"; };
 		A6152DF11851AD2900A82305 /* zannen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zannen.mp3; sourceTree = "<group>"; };
+		A6E19294189119CB00EEB1DA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		A6E4304F185DB83D0013EC0B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -327,6 +329,7 @@
 		67CC36021842CDCA004BCF27 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A6E192931891194900EEB1DA /* images */,
 				67836F00185DCC820030195F /* rennga */,
 				67CC360B1842CDCA004BCF27 /* AppDelegate.h */,
 				67CC360C1842CDCA004BCF27 /* AppDelegate.m */,
@@ -399,6 +402,14 @@
 				A6152DF11851AD2900A82305 /* zannen.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A6E192931891194900EEB1DA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A6E19294189119CB00EEB1DA /* icon.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,6 +550,7 @@
 				67CC36071842CDCA004BCF27 /* InfoPlist.strings in Resources */,
 				65715E821883D5AC0015BE9B /* rennga31.jpg in Resources */,
 				65715E7B1883D5AC0015BE9B /* rennga25.jpg in Resources */,
+				A6E19295189119CB00EEB1DA /* icon.png in Resources */,
 				A6152DFB1851AD2900A82305 /* meka.mp3 in Resources */,
 				67836F0B185DCC820030195F /* rennga2.jpg in Resources */,
 				65715E8F1883D5AC0015BE9B /* rennga40.jpg in Resources */,
@@ -700,7 +712,6 @@
 		67CC362C1842CDCB004BCF27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = ICON;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "model/model.temp_caseinsensitive_rename_2-Prefix.pch";
@@ -713,7 +724,6 @@
 		67CC362D1842CDCB004BCF27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = ICON;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "model/model.temp_caseinsensitive_rename_2-Prefix.pch";
