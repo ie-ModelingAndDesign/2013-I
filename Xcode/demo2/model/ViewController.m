@@ -27,8 +27,8 @@ UILabel *label; // オプション用ラベル
 UILabel *labeltouch; // 壁たたけ用ラベル
 
                      // オプションボタン、出現頻度のための作業用変数宣言
-int k = 50000;       // 100万のうちに、何回オプションボタンを出現させるか (とりあえず5万回)
-int hairetsu[50000]; // 配列に乱数を格納するための変数
+int k = 500;       // 100万のうちに、何回オプションボタンを出現させるか (とりあえず5万回)
+int hairetsu[500]; // 配列に乱数を格納するための変数
 int oprum = 10;      // どの位置にボタンを表示させるかに使用する乱数の格納変数
 
 
@@ -51,12 +51,10 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     labeltouch.text = @"壁を叩いて!!";
     [self.view addSubview:labeltouch];
     
-    i=999899;
-    
     // オプションボタンの出現位置をランダムで決定
     for (int c=0; c<k ;c++){
-        hairetsu[c] = arc4random_uniform(1000000);
-        printf("%d\n", 1000000 - hairetsu[c]);
+        hairetsu[c] = arc4random_uniform(1000);
+        printf("%d\n", 1000 - hairetsu[c]);
     }
     
     
@@ -229,7 +227,7 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     
     // ここに処理を書く
     i++;
-    counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    counter.text = [NSString stringWithFormat:@"%d",1000 - i];
     
     
     // オプションボタンの頻度設定
@@ -272,7 +270,7 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
                           cancelButtonTitle:@"キャンセル"
                           otherButtonTitles:@"戻る", nil];
     
-    if (i==1000000){
+    if (i==1000){
         [alert show];
     }
     
@@ -314,34 +312,34 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     [self.view addSubview:label];
     
     
-    if (a<6){                              //カウントを1000000に(リセット)する
+    if (a<6){                              //カウントを1000に(リセット)する
         i = 0;
-        counter.text = @"1000000";
+        counter.text = @"1000";
         label.text = @"カウントリセットを行いました^^";
-    }else if (6<a && a<9){                 //カウントを500000にする
-        i = 500000;
-        counter.text = @"500000";
-        label.text = @"カウントを500000にセット^^";
+    }else if (6<a && a<9){                 //カウントを500にする
+        i = 500;
+        counter.text = @"500";
+        label.text = @"カウントを500にセット^^";
     }else if (a == 10){                    //カウントを100にする
-        i = 999900;
+        i = 900;
         counter.text = @"100";
         label.text = @"カウントを   100にセット^^";
     }else if (10<a && a<25){               //カウントを+1000する
-        i = i - 1000;
-        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-        label.text = @"カウントを  +1000しました^^";
+        i = i - 10;
+        counter.text = [NSString stringWithFormat:@"%d",1000 - i];
+        label.text = @"カウントを  +10しました^^";
     }else if (25<a && a<40){               //カウントを-1000する
-        i = i + 1000;
-        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-        label.text = @"カウントを  -1000しました^^";
+        i = i + 10;
+        counter.text = [NSString stringWithFormat:@"%d",1000 - i];
+        label.text = @"カウントを  -10しました^^";
     }else if (40<a && a<45){               //カウントを+100000する
-        i = i - 100000;
-        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-        label.text = @"カウントを+100000しました^^";
+        i = i - 100;
+        counter.text = [NSString stringWithFormat:@"%d",1000 - i];
+        label.text = @"カウントを+100しました^^";
     }else if (45<a && a<50){               //カウントを-100000する
-        i = i + 100000;
-        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-        label.text = @"カウントを-100000しました^^";
+        i = i + 100;
+        counter.text = [NSString stringWithFormat:@"%d",1000 - i];
+        label.text = @"カウントを-100しました^^";
     }else {
         label.text = @"          何もしてないよ^^";
     }
@@ -357,12 +355,12 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
  * カウンターの上限値(100万)、下限値(0)を設定
  */
 - (void)CounterJudged:(id)sender {
-    if (1000000 - i > 1000000){
+    if (1000 - i > 1000){
         i = 0;
-        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-    }else if (1000000 - i < 0){
-        i = 999999;
-        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+        counter.text = [NSString stringWithFormat:@"%d",1000 - i];
+    }else if (1000 - i < 0){
+        i = 999;
+        counter.text = [NSString stringWithFormat:@"%d",1000 - i];
     }
 }
 
@@ -523,105 +521,105 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
                         ];
     
     //int ia = (1000000 - ie) % 100;
-    if(0 <= ie && ie < 100) {
+    if(0 <= ie && ie < 10) {
         imageView.image = images[0];
-    } else if(100 <= ie && ie < 200){
+    } else if(10 <= ie && ie < 20){
         imageView.image = images[1];
-    } else if(200 <= ie && ie < 300){
+    } else if(20 <= ie && ie < 30){
         imageView.image = images[2];
-    } else if(300 <= ie && ie < 400){
+    } else if(30 <= ie && ie < 40){
         imageView.image = images[3];
-    } else if(400 <= ie && ie < 500){
+    } else if(40 <= ie && ie < 50){
         imageView.image = images[4];
-    } else if(500 <= ie && ie < 800){
+    } else if(50 <= ie && ie < 80){
         imageView.image = images[5];
-    } else if(800 <= ie && ie < 1000){
+    } else if(80 <= ie && ie < 100){
         imageView.image = images[6];
-    } else if(1000 <= ie && ie < 10000){
+    } else if(100 <= ie && ie < 120){
         imageView.image = images[7];
-    } else if(10000 <= ie && ie < 30000){
+    } else if(120 <= ie && ie < 140){
         imageView.image = images[8];
-    } else if(30000 <= ie && ie < 50000){
+    } else if(140 <= ie && ie < 160){
         imageView.image = images[9];
-    } else if(50000 <= ie && ie < 100000){
+    } else if(160 <= ie && ie < 180){
         imageView.image = images[10];
-    } else if(100000 <= ie && ie < 150000){
+    } else if(180 <= ie && ie < 200){
         imageView.image = images[11];
-    } else if(150000 <= ie && ie < 200000){
+    } else if(200 <= ie && ie < 220){
         imageView.image = images[12];
-    } else if(200000 <= ie && ie < 250000){
+    } else if(220 <= ie && ie < 240){
         imageView.image = images[13];
-    } else if(250000 <= ie && ie < 300000){
+    } else if(240 <= ie && ie < 260){
         imageView.image = images[14];
-    } else if(300000 <= ie && ie < 350000){
+    } else if(260 <= ie && ie < 280){
         imageView.image = images[15];
-    } else if(350000 <= ie && ie < 400000){
+    } else if(280 <= ie && ie < 300){
         imageView.image = images[16];
-    } else if(400000 <= ie && ie < 450000){
+    } else if(300 <= ie && ie < 320){
         imageView.image = images[17];
-    } else if(450000 <= ie && ie < 500000){
+    } else if(320 <= ie && ie < 340){
         imageView.image = images[18];
-    } else if(500000 <= ie && ie < 550000){
+    } else if(340 <= ie && ie < 360){
         imageView.image = images[19];
-    } else if(550000 <= ie && ie < 600000){
+    } else if(360 <= ie && ie < 380){
         imageView.image = images[20];
-    } else if(600000 <= ie && ie < 650000){
+    } else if(380 <= ie && ie < 400){
         imageView.image = images[21];
-    } else if(650000 <= ie && ie < 700000){
+    } else if(400 <= ie && ie < 420){
         imageView.image = images[22];
-    } else if(700000 <= ie && ie < 750000){
+    } else if(420 <= ie && ie < 440){
         imageView.image = images[23];
-    } else if(750000 <= ie && ie < 800000){
+    } else if(440 <= ie && ie < 460){
         imageView.image = images[24];
-    } else if(800000 <= ie && ie < 850000){
+    } else if(460 <= ie && ie < 480){
         imageView.image = images[25];
-    } else if(850000 <= ie && ie < 860000){
+    } else if(480 <= ie && ie < 500){
         imageView.image = images[26];
-    } else if(860000 <= ie && ie < 870000){
+    } else if(500 <= ie && ie < 520){
         imageView.image = images[27];
-    } else if(870000 <= ie && ie < 880000){
+    } else if(520 <= ie && ie < 540){
         imageView.image = images[28];
-    } else if(880000 <= ie && ie < 890000){
+    } else if(540 <= ie && ie < 560){
         imageView.image = images[29];
-    } else if(890000 <= ie && ie < 900000){
+    } else if(560 <= ie && ie < 580){
         imageView.image = images[30];
-    } else if(900000 <= ie && ie < 901000){
+    } else if(580 <= ie && ie < 600){
         imageView.image = images[31];
-    } else if(901000 <= ie && ie < 902000){
+    } else if(600 <= ie && ie < 620){
         imageView.image = images[32];
-    } else if(902000 <= ie && ie < 903000){
+    } else if(620 <= ie && ie < 640){
         imageView.image = images[33];
-    } else if(903000 <= ie && ie < 904000){
+    } else if(640 <= ie && ie < 660){
         imageView.image = images[34];
-    } else if(904000 <= ie && ie < 905000){
+    } else if(660 <= ie && ie < 680){
         imageView.image = images[35];
-    } else if(905000 <= ie && ie < 908000){
+    } else if(680 <= ie && ie < 720){
         imageView.image = images[36];
-    } else if(908000 <= ie && ie < 910000){
+    } else if(720 <= ie && ie < 790){
         imageView.image = images[37];
-    } else if(910000 <= ie && ie < 930000){
+    } else if(790 <= ie && ie < 800){
         imageView.image = images[38];
-    } else if(930000 <= ie && ie < 950000){
+    } else if(800 <= ie && ie < 850){
         imageView.image = images[39];
-    } else if(950000 <= ie && ie < 970000){
+    } else if(850 <= ie && ie < 890){
         imageView.image = images[40];
-    } else if(970000 <= ie && ie < 990000){
+    } else if(890 <= ie && ie < 900){
         imageView.image = images[41];
-    } else if(990000 <= ie && ie < 994000){
+    } else if(900 <= ie && ie < 910){
         imageView.image = images[42];
-    } else if(994000 <= ie && ie < 998000){
+    } else if(910 <= ie && ie < 940){
         imageView.image = images[43];
-    } else if(998000 <= ie && ie < 999500){
+    } else if(940 <= ie && ie < 950){
         imageView.image = images[44];
-    } else if(999500 <= ie && ie < 999600){
+    } else if(950 <= ie && ie < 960){
         imageView.image = images[45];
-    } else if(999600 <= ie && ie < 999700){
+    } else if(960 <= ie && ie < 970){
         imageView.image = images[46];
-    } else if(999700 <= ie && ie < 999800){
+    } else if(970 <= ie && ie < 980){
         imageView.image = images[47];
-    } else if(999800 <= ie && ie < 999900){
+    } else if(980 <= ie && ie < 990){
         imageView.image = images[48];
-    } else if(999900 <= ie){
+    } else if(990 <= ie){
         imageView.image = images[49];
     }
 
@@ -641,14 +639,14 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
         case 1: // 戻るが押されたとき
             NSLog(@"戻る");
             i = 0;
-            counter.text = @"1000000";
+            counter.text = @"1000";
             [self viewChange:(i)];
             break;
             
         default: // キャンセルが押されたとき
             NSLog(@"キャンセル");
             i = 0;
-            counter.text = @"1000000";
+            counter.text = @"1000";
             [self viewChange:(i)];
             break;
 
