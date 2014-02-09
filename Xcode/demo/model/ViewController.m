@@ -51,7 +51,8 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     labeltouch.text = @"壁を叩いて!!";
     [self.view addSubview:labeltouch];
     
-    i=999899;
+    //i=999899;
+    i = 0;
     
     // オプションボタンの出現位置をランダムで決定
     for (int c=0; c<k ;c++){
@@ -225,12 +226,21 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     
     [self viewChange:(i)];
     [self Effective_sound];
+
     
+    if (i == 999999){
+        i++;
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }
     
     // ここに処理を書く
-    i++;
-    counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
     
+    else {
+        i=i+1000;
+        counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
+    }
+
+
     
     // オプションボタンの頻度設定
     // 乱数の値とiが同じになればオプションボタン表示あせるようにする
@@ -314,31 +324,31 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     [self.view addSubview:label];
     
     
-    if (a<6){                              //カウントを1000000に(リセット)する
+    if (a<2){                              //カウントを1000000に(リセット)する
         i = 0;
         counter.text = @"1000000";
         label.text = @"カウントリセットを行いました^^";
-    }else if (6<a && a<9){                 //カウントを500000にする
+    }else if (2<=a && a<15){                 //カウントを500000にする
         i = 500000;
         counter.text = @"500000";
         label.text = @"カウントを500000にセット^^";
-    }else if (a == 10){                    //カウントを100にする
-        i = 999900;
+    }else if (a == 15){                    //カウントを100にする
+        i = 990000;
         counter.text = @"100";
-        label.text = @"カウントを   100にセット^^";
-    }else if (10<a && a<25){               //カウントを+1000する
-        i = i - 1000;
+        label.text = @"カウントを   10000にセット^^";
+    }else if (15<a && a<=30){               //カウントを+1000する
+        i = i - 300000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-        label.text = @"カウントを  +1000しました^^";
-    }else if (25<a && a<40){               //カウントを-1000する
-        i = i + 1000;
+        label.text = @"カウントを  +300000しました^^";
+    }else if (30<a && a<=80){               //カウントを-1000する
+        i = i + 300000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
-        label.text = @"カウントを  -1000しました^^";
-    }else if (40<a && a<45){               //カウントを+100000する
+        label.text = @"カウントを  -300000しました^^";
+    }else if (80<a && a<=90){               //カウントを+100000する
         i = i - 100000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
         label.text = @"カウントを+100000しました^^";
-    }else if (45<a && a<50){               //カウントを-100000する
+    }else if (90<a && a<100){               //カウントを-100000する
         i = i + 100000;
         counter.text = [NSString stringWithFormat:@"%d",1000000 - i];
         label.text = @"カウントを-100000しました^^";
