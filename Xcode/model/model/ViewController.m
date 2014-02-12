@@ -51,7 +51,6 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     labeltouch.text = @"壁を叩いて!!";
     [self.view addSubview:labeltouch];
     
-    i=999899;
     
     // オプションボタンの出現位置をランダムで決定
     for (int c=0; c<k ;c++){
@@ -104,35 +103,6 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     [OPbtn6 setFrame:CGRectMake(260, 400, 40, 40)];
 
     
-
-    
-/*
-    // キャプションを設定
-    
-    [OPbtn1 setTitle:@"push"
-            //forState:UIControlStateNormal];
-    [OPbtn2 setTitle:@"push"
-            forState:UIControlStateNormal];
-    [OPbtn3 setTitle:@"push"
-            forState:UIControlStateNormal];
-    [OPbtn4 setTitle:@"push"
-            forState:UIControlStateNormal];
-    [OPbtn5 setTitle:@"push"
-            forState:UIControlStateNormal];
-    [OPbtn6 setTitle:@"push"
-            forState:UIControlStateNormal];
-
-    
-    // キャプションに合わせてサイズを設定
-    [OPbtn1 sizeToFit];
-    [OPbtn2 sizeToFit];
-    [OPbtn3 sizeToFit];
-    [OPbtn4 sizeToFit];
-    [OPbtn5 sizeToFit];
-    [OPbtn6 sizeToFit];
-*/
-    
-    
     // 初期状態で オプションボタン非表示
     OPbtn1.hidden = YES;
     OPbtn2.hidden = YES;
@@ -141,12 +111,6 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     OPbtn5.hidden = YES;
     OPbtn6.hidden = YES;
     
-    
-    
-    // ボタンがタップされたときに呼ばれるメソッドを設定
-    /*[button addTarget:self
-               action:@selector(incrementI:)
-     forControlEvents:UIControlEventTouchUpInside];*/
     
     [button addTarget:self
                action:@selector(button_Tapped:)
@@ -455,14 +419,6 @@ int oprum = 10;      // どの位置にボタンを表示させるかに使用�
     AudioServicesPlaySystemSound (soundID);
 }
 
-
-
-
-/*-(void) incrementI:(UIButton*)button{
-    m++;
-    [self viewChange:(m)];
-    [self Effective_sound];
-}*/
 
 -(void)viewChange:(int)ie
 {
